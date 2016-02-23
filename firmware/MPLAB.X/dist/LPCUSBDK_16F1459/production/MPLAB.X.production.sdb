@@ -1,0 +1,1144 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1459 ]
+[d frameptr 6 ]
+"88 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/low_pin_count_usb_development_kit/pic16f1459/system.c
+[e E2864 . `uc
+SYSTEM_STATE_USB_START 0
+SYSTEM_STATE_USB_SUSPEND 1
+SYSTEM_STATE_USB_RESUME 2
+]
+"98
+[e E2621 . `uc
+LED_NONE 0
+LED_D1 1
+LED_D2 2
+LED_D3 3
+LED_D4 4
+]
+"99
+[e E2613 . `uc
+BUTTON_NONE 0
+BUTTON_S1 1
+]
+"244 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[e E2613 . `uc
+BUTTON_NONE 0
+BUTTON_S1 1
+]
+"293
+[e E2940 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"51 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[e E2864 . `uc
+SYSTEM_STATE_USB_START 0
+SYSTEM_STATE_USB_SUSPEND 1
+SYSTEM_STATE_USB_RESUME 2
+]
+"79
+[e E2940 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"124
+[e E2881 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"125
+[e E2949 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"81 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_led_usb_status.c
+[e E2649 . `uc
+LED_NONE 0
+LED_D1 1
+LED_D2 2
+LED_D3 3
+LED_D4 4
+]
+"85
+[e E2940 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"55 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/adc.c
+[e E30 . `uc
+ADC_CHANNEL_10 10
+]
+"158
+[e E33 . `uc
+ADC_CONFIGURATION_DEFAULT 0
+]
+"56 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/buttons.c
+[e E2613 . `uc
+BUTTON_NONE 0
+BUTTON_S1 1
+]
+"60 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/leds.c
+[e E2 . `uc
+LED_NONE 0
+LED_D1 1
+LED_D2 2
+LED_D3 3
+LED_D4 4
+]
+"131 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[e E2942 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"731
+[e E2883 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"2035
+[e E2951 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"94 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/adc.c
+[v _ADC_Read10bit ADC_Read10bit `(ui  1 e 2 0 ]
+"55 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/buttons.c
+[v _BUTTON_IsPressed BUTTON_IsPressed `(uc  1 e 1 0 ]
+"85
+[v _BUTTON_Enable BUTTON_Enable `(v  1 e 0 0 ]
+[v i1_BUTTON_Enable BUTTON_Enable `(v  1 e 0 0 ]
+"59 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/leds.c
+[v _LED_On LED_On `(v  1 e 0 0 ]
+"100
+[v _LED_Off LED_Off `(v  1 e 0 0 ]
+"220
+[v _LED_Enable LED_Enable `(v  1 e 0 0 ]
+[v i1_LED_Enable LED_Enable `(v  1 e 0 0 ]
+"295 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+[v i1_USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+"495
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 0 0 ]
+"896
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 0 0 ]
+"1013
+[v _USBTransferOnePacket USBTransferOnePacket `(*.1v  1 e 1 0 ]
+"1370
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 0 0 ]
+"1434
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 0 0 ]
+"1506
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 0 0 ]
+"1561
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 0 USBConfigureEndpoint ]
+"1634
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 0 USBCtrlEPServiceComplete ]
+"1789
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
+"1870
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
+"1986
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
+"2061
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 0 USBStdGetDscHandler ]
+"2147
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
+"2220
+[v _USBStallHandler USBStallHandler `(v  1 s 0 USBStallHandler ]
+"2263
+[v _USBSuspend USBSuspend `(v  1 s 0 USBSuspend ]
+"2321
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 0 USBWakeFromSuspend ]
+"2390
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
+"2483
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 0 USBCtrlTrfSetupHandler ]
+"2555
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 0 USBCtrlTrfOutHandler ]
+"2609
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
+"2703
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 0 USBCheckStdRequest ]
+"2771
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
+"3042
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 0 0 ]
+"153 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 0 0 ]
+"205 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseInitialize APP_DeviceMouseInitialize `(v  1 e 0 0 ]
+"239
+[v _APP_DeviceMouseTasks APP_DeviceMouseTasks `(v  1 e 0 0 ]
+"263
+[v _APP_DeviceMouseIdleRateCallback APP_DeviceMouseIdleRateCallback `(v  1 e 0 0 ]
+"286
+[v _APP_DeviceMouseSOFHandler APP_DeviceMouseSOFHandler `(v  1 e 0 0 ]
+"75 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_led_usb_status.c
+[v _APP_LEDUpdateUSBStatus APP_LEDUpdateUSBStatus `(v  1 e 0 0 ]
+"49 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _main main `(v  1 e 0 0 ]
+"123
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+"87 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/low_pin_count_usb_development_kit/pic16f1459/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+[v i1_SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+"112
+[v _SYS_InterruptHigh SYS_InterruptHigh `II(v  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v1.35/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v1.35/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 /Applications/microchip/xc8/v1.35/sources/common/memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+"4 /Applications/microchip/xc8/v1.35/sources/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"131 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceState USBDeviceState `VEE2940  1 e 1 0 ]
+"132
+[v _USBActiveConfiguration USBActiveConfiguration `VEuc  1 e 1 0 ]
+"133
+[v _USBAlternateInterface USBAlternateInterface `VE[1]uc  1 e 1 0 ]
+[s S582 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"134
+[s S591 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S598 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S602 _BD_STAT 1 `uc 1 Val 1 0 `S582 1 . 1 0 `S591 1 . 1 0 `S598 1 . 1 0 ]
+[s S607 . 4 `S602 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S612 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S616 __BDT 4 `S607 1 . 4 0 `S612 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.1VES616  1 e 1 0 ]
+"135
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.1VES616  1 e 1 0 ]
+"136
+[v _pBDTEntryOut pBDTEntryOut `[2]*.1VES616  1 e 2 0 ]
+"137
+[v _pBDTEntryIn pBDTEntryIn `[2]*.1VES616  1 e 2 0 ]
+"138
+[v _shortPacketStatus shortPacketStatus `VEuc  1 e 1 0 ]
+"139
+[v _controlTransferState controlTransferState `VEuc  1 e 1 0 ]
+[u S621 . 2 `*.1uc 1 bRam 2 0 `*.1DCCuc 1 bRom 2 0 `*.1ui 1 wRam 2 0 `*.1DCCui 1 wRom 2 0 ]
+"140
+[s S626 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
+]
+[u S631 . 1 `S626 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S634 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[u S637 . 2 `ui 1 Val 2 0 `[2]uc 1 v 2 0 `S634 1 byte 2 0 ]
+[s S641 . 5 `S621 1 pSrc 2 0 `S631 1 info 1 2 `S637 1 wCount 2 3 ]
+[v _inPipes inPipes `VE[1]S641  1 e 5 0 ]
+[u S645 . 2 `*.1uc 1 bRam 2 0 `*.1ui 1 wRam 2 0 ]
+"141
+[s S648 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S651 . 1 `S648 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S655 . 7 `S645 1 pDst 2 0 `S651 1 info 1 2 `S637 1 wCount 2 3 `*.37(v 1 pFunc 2 5 ]
+[v _outPipes outPipes `VE[1]S655  1 e 7 0 ]
+"142
+[v _pDst pDst `*.1VEuc  1 e 1 0 ]
+"143
+[v _RemoteWakeup RemoteWakeup `VEuc  1 e 1 0 ]
+"144
+[v _USBBusIsSuspended USBBusIsSuspended `VEuc  1 e 1 0 ]
+[s S660 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"145
+[u S665 __USTAT 1 `S660 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `VES665  1 e 1 0 ]
+"146
+[v _endpoint_number endpoint_number `VEuc  1 e 1 0 ]
+"147
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `VEuc  1 e 1 0 ]
+[s S668 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"148
+[u S671 . 1 `S668 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `VE[2]S671  1 e 2 0 ]
+"149
+[v _ep_data_out ep_data_out `VE[2]S671  1 e 2 0 ]
+"150
+[v _USBStatusStageTimeoutCounter USBStatusStageTimeoutCounter `VEuc  1 e 1 0 ]
+"151
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEuc  1 e 1 0 ]
+"152
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEuc  1 e 1 0 ]
+"153
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEuc  1 e 1 0 ]
+"154
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEuc  1 e 1 0 ]
+"155
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEuc  1 e 1 0 ]
+"156
+[v _USB1msTickCount USB1msTickCount `VEul  1 e 4 0 ]
+"157
+[v _USBTicksSinceSuspendEnd USBTicksSinceSuspendEnd `VEuc  1 e 1 0 ]
+"164
+[v _BDT BDT `VE[8]S616  1 e 32 @32 ]
+[s S674 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `ui 1 wValue 2 2 `ui 1 wIndex 2 4 `ui 1 wLength 2 6 ]
+"169
+[s S701 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S637 1 W_Value 2 2 `S637 1 W_Index 2 4 `S637 1 W_Length 2 6 ]
+[s S707 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S718 . 1 `uc 1 recipient 1 0 :5:0 
+`uc 1 type 1 0 :2:5 
+`uc 1 direction 1 0 :1:7 
+]
+[u S722 . 1 `uc 1 bmRequestType 1 0 `S718 1 . 1 0 ]
+[s S725 . 1 `S722 1 requestInfo 1 0 ]
+[s S727 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `ui 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S735 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S744 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S753 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S762 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S771 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S782 . 8 `S674 1 . 8 0 `S701 1 . 8 0 `S707 1 . 8 0 `S725 1 . 1 0 `S727 1 . 8 0 `S735 1 . 8 0 `S744 1 . 8 0 `S753 1 . 8 0 `S762 1 . 8 0 `S771 1 . 8 0 ]
+[v _SetupPkt SetupPkt `VES782  1 e 8 @64 ]
+"170
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @72 ]
+"79 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device_hid.c
+[v _idle_rate idle_rate `uc  1 s 1 idle_rate ]
+"80
+[v _active_protocol active_protocol `uc  1 s 1 active_protocol ]
+[s S50 . 50 `[50]uc 1 report 50 0 ]
+"43 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _hid_rpt01 hid_rpt01 `DCCS50  1 e 50 0 ]
+[s S52 . 1 `uc 1 button1 1 0 :1:0 
+`uc 1 button2 1 0 :1:1 
+`uc 1 button3 1 0 :1:2 
+`uc 1 . 1 0 :5:3 
+]
+"163
+[s S57 . 1 `uc 1 primary 1 0 :1:0 
+`uc 1 secondary 1 0 :1:1 
+`uc 1 tertiary 1 0 :1:2 
+`uc 1 . 1 0 :5:3 
+]
+[u S62 . 1 `S52 1 . 1 0 `S57 1 . 1 0 `uc 1 value 1 0 ]
+[s S66 . 3 `S62 1 buttons 1 0 `uc 1 x 1 1 `uc 1 y 1 2 ]
+[v _mouseReport mouseReport `S66  1 s 3 mouseReport ]
+"171
+[v _xVector xVector `DCC[4]uc  1 s 4 xVector ]
+"172
+[v _yVector yVector `DCC[4]uc  1 s 4 yVector ]
+[s S70 . 3 `*.1v 1 handle 1 0 `uc 1 idleRate 1 1 `uc 1 idleRateSofCount 1 2 ]
+"191
+[s S74 . 9 `uc 1 sentStop 1 0 `uc 1 lastButtonState 1 1 `uc 1 vectorPosition 1 2 `ui 1 movementCount 2 3 `uc 1 movementMode 1 5 `[1]S70 1 inputReport 3 6 ]
+[v _mouse mouse `S74  1 s 9 mouse ]
+[s S264 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `ui 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `ui 1 idVendor 2 8 `ui 1 idProduct 2 10 `ui 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
+"161 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/usb_descriptors.c
+[v _device_dsc device_dsc `DCCS264  1 e 18 0 ]
+"180
+[v _configDescriptor1 configDescriptor1 `DCC[34]uc  1 e 34 0 ]
+[s S279 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]ui 1 string 2 2 ]
+"222
+[v _sd000 sd000 `DCCS279  1 e 4 0 ]
+[s S283 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]ui 1 string 50 2 ]
+"227
+[v _sd001 sd001 `DCCS283  1 e 52 0 ]
+[s S287 . 46 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[22]ui 1 string 44 2 ]
+"234
+[v _sd002 sd002 `DCCS287  1 e 46 0 ]
+"241
+[v _USB_CD_Ptr USB_CD_Ptr `DCC[1]*.25DCCuc  1 e 2 0 ]
+"247
+[v _USB_SD_Ptr USB_SD_Ptr `DCC[3]*.25DCCuc  1 e 6 0 ]
+[s S974 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"360 /Applications/microchip/xc8/v1.35/include/pic16f1459.h
+[s S983 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S988 . 1 `S974 1 . 1 0 `S983 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES988  1 e 1 @11 ]
+[s S473 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"429
+[u S480 . 1 `S473 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES480  1 e 1 @12 ]
+[s S875 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ACTIF 1 0 :1:1 
+`uc 1 USBIF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"630
+[u S884 . 1 `S875 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES884  1 e 1 @18 ]
+[s S409 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1015
+[u S415 . 1 `S409 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES415  1 e 1 @141 ]
+[s S527 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1056
+[u S536 . 1 `S527 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES536  1 e 1 @142 ]
+[s S793 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ACTIE 1 0 :1:1 
+`uc 1 USBIE 1 0 :1:2 
+`uc 1 BCL1IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 C1IE 1 0 :1:5 
+`uc 1 C2IE 1 0 :1:6 
+`uc 1 OSFIE 1 0 :1:7 
+]
+"1173
+[u S802 . 1 `S793 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES802  1 e 1 @146 ]
+"1597
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1616
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1635
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S372 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1660
+[s S376 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S384 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S387 . 1 `S372 1 . 1 0 `S376 1 . 1 0 `S384 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES387  1 e 1 @157 ]
+"1714
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1779
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+[s S506 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"1901
+[u S515 . 1 `S506 1 . 1 0 ]
+[v _LATCbits LATCbits `VES515  1 e 1 @270 ]
+[s S424 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 ANSB4 1 0 :1:4 
+`uc 1 ANSB5 1 0 :1:5 
+]
+"2504
+[s S428 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 ANSB 1 0 :4:4 
+]
+[u S431 . 1 `S424 1 . 1 0 `S428 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES431  1 e 1 @397 ]
+"4897
+[v _UCON UCON `VEuc  1 e 1 @3726 ]
+[s S175 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"4913
+[u S183 . 1 `S175 1 . 1 0 ]
+[v _UCONbits UCONbits `VES183  1 e 1 @3726 ]
+"4947
+[v _USTAT USTAT `VEuc  1 e 1 @3727 ]
+"5006
+[v _UIR UIR `VEuc  1 e 1 @3728 ]
+[s S833 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"5022
+[u S841 . 1 `S833 1 . 1 0 ]
+[v _UIRbits UIRbits `VES841  1 e 1 @3728 ]
+"5061
+[v _UCFG UCFG `VEuc  1 e 1 @3729 ]
+"5114
+[v _UIE UIE `VEuc  1 e 1 @3730 ]
+[s S852 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"5130
+[u S860 . 1 `S852 1 . 1 0 ]
+[v _UIEbits UIEbits `VES860  1 e 1 @3730 ]
+"5169
+[v _UEIR UEIR `VEuc  1 e 1 @3731 ]
+"5317
+[v _UADDR UADDR `VEuc  1 e 1 @3734 ]
+"5372
+[v _UEIE UEIE `VEuc  1 e 1 @3735 ]
+"5422
+[v _UEP0 UEP0 `VEuc  1 e 1 @3736 ]
+[s S1043 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"5436
+[u S1049 . 1 `S1043 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES1049  1 e 1 @3736 ]
+"5465
+[v _UEP1 UEP1 `VEuc  1 e 1 @3737 ]
+"49 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"99
+} 0
+"295 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+{
+"314
+[v USBDeviceInit@p p `*.39uc  1 a 2 1 ]
+[v USBDeviceInit@i_1231 i `uc  1 a 1 3 ]
+"297
+[v USBDeviceInit@i i `uc  1 a 1 4 ]
+"389
+} 0
+"1370
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 0 0 ]
+{
+"1400
+} 0
+"87 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/low_pin_count_usb_development_kit/pic16f1459/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+{
+[v SYSTEM_Initialize@state state `E2864  1 a 1 wreg ]
+[v SYSTEM_Initialize@state state `E2864  1 a 1 wreg ]
+[v SYSTEM_Initialize@state state `E2864  1 a 1 1 ]
+"108
+} 0
+"220 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/leds.c
+[v _LED_Enable LED_Enable `(v  1 e 0 0 ]
+{
+[v LED_Enable@led led `E2  1 a 1 wreg ]
+[v LED_Enable@led led `E2  1 a 1 wreg ]
+[v LED_Enable@led led `E2  1 a 1 0 ]
+"243
+} 0
+"85 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/buttons.c
+[v _BUTTON_Enable BUTTON_Enable `(v  1 e 0 0 ]
+{
+[v BUTTON_Enable@button button `E2613  1 a 1 wreg ]
+[v BUTTON_Enable@button button `E2613  1 a 1 wreg ]
+[v BUTTON_Enable@button button `E2613  1 a 1 0 ]
+"95
+} 0
+"239 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseTasks APP_DeviceMouseTasks `(v  1 e 0 0 ]
+{
+"241
+[v APP_DeviceMouseTasks@currentButtonState currentButtonState `uc  1 a 1 2 ]
+"261
+} 0
+"55 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/buttons.c
+[v _BUTTON_IsPressed BUTTON_IsPressed `(uc  1 e 1 0 ]
+{
+[v BUTTON_IsPressed@button button `E2613  1 a 1 wreg ]
+[v BUTTON_IsPressed@button button `E2613  1 a 1 wreg ]
+[v BUTTON_IsPressed@button button `E2613  1 a 1 0 ]
+"67
+} 0
+"112 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/low_pin_count_usb_development_kit/pic16f1459/system.c
+[v _SYS_InterruptHigh SYS_InterruptHigh `II(v  1 e 0 0 ]
+{
+"117
+} 0
+"495 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 0 0 ]
+{
+"497
+[v USBDeviceTasks@i i `uc  1 a 1 18 ]
+"845
+} 0
+"295
+[v i1_USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+{
+[v i1USBDeviceInit@p USBDeviceInit `*.39uc  1 a 2 1 ]
+[v i1USBDeviceInit@i USBDeviceInit `uc  1 a 1 4 ]
+[v i1USBDeviceInit@i_1231 USBDeviceInit `uc  1 a 1 3 ]
+"389
+} 0
+"2321
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 0 USBWakeFromSuspend ]
+{
+"2367
+} 0
+"2263
+[v _USBSuspend USBSuspend `(v  1 s 0 USBSuspend ]
+{
+"2304
+} 0
+"2220
+[v _USBStallHandler USBStallHandler `(v  1 s 0 USBStallHandler ]
+{
+"2245
+} 0
+"3042
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 0 0 ]
+{
+"3060
+} 0
+"2390
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
+{
+"2441
+} 0
+"2483
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 0 USBCtrlTrfSetupHandler ]
+{
+"2532
+} 0
+"1634
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 0 USBCtrlEPServiceComplete ]
+{
+"1766
+} 0
+"1506
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 0 0 ]
+{
+"1536
+} 0
+"2703
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 0 USBCheckStdRequest ]
+{
+"2750
+} 0
+"1986
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
+{
+"1994
+[v USBStdSetCfgHandler@p p `*.39uc  1 a 2 6 ]
+[v USBStdSetCfgHandler@i_1573 i `uc  1 a 1 8 ]
+"1988
+[v USBStdSetCfgHandler@i i `uc  1 a 1 9 ]
+"2042
+} 0
+"8 /Applications/microchip/xc8/v1.35/sources/common/memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+{
+[v memset@p1 p1 `*.4v  1 a 1 wreg ]
+"15
+[v memset@p p `*.4uc  1 a 1 5 ]
+"8
+[v memset@p1 p1 `*.4v  1 a 1 wreg ]
+[v memset@c c `i  1 p 2 0 ]
+[v memset@n n `ui  1 p 2 2 ]
+"18
+[v memset@p1 p1 `*.4v  1 a 1 6 ]
+"22
+} 0
+"2147 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
+{
+[s S582 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2179
+[s S591 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S598 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S602 _BD_STAT 1 `uc 1 Val 1 0 `S582 1 . 1 0 `S591 1 . 1 0 `S598 1 . 1 0 ]
+[s S607 . 4 `S602 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S612 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S616 __BDT 4 `S607 1 . 4 0 `S612 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdGetStatusHandler@p p `*.1S616  1 a 1 1 ]
+"2202
+} 0
+"2061
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 0 USBStdGetDscHandler ]
+{
+"2130
+} 0
+"2771
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
+{
+"2778
+[v USBStdFeatureReqHandler@pUEP pUEP `*.39uc  1 a 2 7 ]
+[s S582 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2773
+[s S591 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S598 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S602 _BD_STAT 1 `uc 1 Val 1 0 `S582 1 . 1 0 `S591 1 . 1 0 `S598 1 . 1 0 ]
+[s S607 . 4 `S602 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S612 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S616 __BDT 4 `S607 1 . 4 0 `S612 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdFeatureReqHandler@p p `*.1S616  1 a 1 10 ]
+[s S668 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"2774
+[u S671 . 1 `S668 1 bits 1 0 `uc 1 Val 1 0 ]
+[v USBStdFeatureReqHandler@current_ep_data current_ep_data `S671  1 a 1 9 ]
+"2997
+} 0
+"123 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+{
+[v USER_USB_CALLBACK_EVENT_HANDLER@event event `E2881  1 p 2 0 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.1v  1 p 1 2 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size size `ui  1 p 2 3 ]
+"186
+} 0
+"87 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/low_pin_count_usb_development_kit/pic16f1459/system.c
+[v i1_SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+{
+[v i1SYSTEM_Initialize@state state `E2864  1 a 1 wreg ]
+[v i1SYSTEM_Initialize@state state `E2864  1 a 1 wreg ]
+[v i1SYSTEM_Initialize@state state `E2864  1 a 1 1 ]
+"108
+} 0
+"220 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/leds.c
+[v i1_LED_Enable LED_Enable `(v  1 e 0 0 ]
+{
+[v i1LED_Enable@led led `E2  1 a 1 wreg ]
+[v i1LED_Enable@led led `E2  1 a 1 wreg ]
+[v i1LED_Enable@led led `E2  1 a 1 0 ]
+"243
+} 0
+"85 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/buttons.c
+[v i1_BUTTON_Enable BUTTON_Enable `(v  1 e 0 0 ]
+{
+[v i1BUTTON_Enable@button button `E2613  1 a 1 wreg ]
+[v i1BUTTON_Enable@button button `E2613  1 a 1 wreg ]
+[v i1BUTTON_Enable@button button `E2613  1 a 1 0 ]
+"95
+} 0
+"153 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 0 0 ]
+{
+"241
+} 0
+"263 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseIdleRateCallback APP_DeviceMouseIdleRateCallback `(v  1 e 0 0 ]
+{
+[v APP_DeviceMouseIdleRateCallback@reportId reportId `uc  1 a 1 wreg ]
+[v APP_DeviceMouseIdleRateCallback@reportId reportId `uc  1 a 1 wreg ]
+[v APP_DeviceMouseIdleRateCallback@idleRate idleRate `uc  1 p 1 4 ]
+"268
+[v APP_DeviceMouseIdleRateCallback@reportId reportId `uc  1 a 1 8 ]
+"272
+} 0
+"4 /Applications/microchip/xc8/v1.35/sources/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"75 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_led_usb_status.c
+[v _APP_LEDUpdateUSBStatus APP_LEDUpdateUSBStatus `(v  1 e 0 0 ]
+{
+"77
+[v APP_LEDUpdateUSBStatus@ledCount ledCount `ui  1 s 2 ledCount ]
+"124
+} 0
+"59 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/low_pin_count_usb_development_kit/pic16f1459/leds.c
+[v _LED_On LED_On `(v  1 e 0 0 ]
+{
+[v LED_On@led led `E2  1 a 1 wreg ]
+[v LED_On@led led `E2  1 a 1 wreg ]
+[v LED_On@led led `E2  1 a 1 0 ]
+"82
+} 0
+"100
+[v _LED_Off LED_Off `(v  1 e 0 0 ]
+{
+[v LED_Off@led led `E2  1 a 1 wreg ]
+[v LED_Off@led led `E2  1 a 1 wreg ]
+[v LED_Off@led led `E2  1 a 1 0 ]
+"123
+} 0
+"286 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseSOFHandler APP_DeviceMouseSOFHandler `(v  1 e 0 0 ]
+{
+"392
+} 0
+"1013 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBTransferOnePacket USBTransferOnePacket `(*.1v  1 e 1 0 ]
+{
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[s S582 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1015
+[s S591 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S598 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S602 _BD_STAT 1 `uc 1 Val 1 0 `S582 1 . 1 0 `S591 1 . 1 0 `S598 1 . 1 0 ]
+[s S607 . 4 `S602 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S612 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S616 __BDT 4 `S607 1 . 4 0 `S612 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBTransferOnePacket@handle handle `*.1VES616  1 a 1 6 ]
+"1013
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v USBTransferOnePacket@dir dir `uc  1 p 1 0 ]
+[v USBTransferOnePacket@data data `*.4uc  1 p 1 1 ]
+[v USBTransferOnePacket@len len `uc  1 p 1 2 ]
+"1018
+[v USBTransferOnePacket@ep ep `uc  1 a 1 5 ]
+"1065
+} 0
+"205 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseInitialize APP_DeviceMouseInitialize `(v  1 e 0 0 ]
+{
+"223
+} 0
+"896 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 0 0 ]
+{
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+"898
+[v USBEnableEndpoint@p p `*.39uc  1 a 2 10 ]
+"896
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+[v USBEnableEndpoint@options options `uc  1 p 1 7 ]
+"902
+[v USBEnableEndpoint@ep ep `uc  1 a 1 12 ]
+"920
+} 0
+"1561
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 0 USBConfigureEndpoint ]
+{
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[s S582 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1563
+[s S591 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S598 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S602 _BD_STAT 1 `uc 1 Val 1 0 `S582 1 . 1 0 `S591 1 . 1 0 `S598 1 . 1 0 ]
+[s S607 . 4 `S602 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S612 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S616 __BDT 4 `S607 1 . 4 0 `S612 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBConfigureEndpoint@handle handle `*.4VES616  1 a 1 6 ]
+"1561
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[v USBConfigureEndpoint@direction direction `uc  1 p 1 0 ]
+"1567
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 5 ]
+"1603
+} 0
+"2555
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 0 USBCtrlTrfOutHandler ]
+{
+"2584
+} 0
+"1870
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
+{
+"1872
+[v USBCtrlTrfRxService@byteToRead byteToRead `uc  1 a 1 5 ]
+"1873
+[v USBCtrlTrfRxService@i i `uc  1 a 1 4 ]
+"1965
+} 0
+"1434
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 0 0 ]
+{
+"1477
+} 0
+"2609
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
+{
+"2611
+[v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 5 ]
+"2684
+} 0
+"1789
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
+{
+"1791
+[v USBCtrlTrfTxService@byteToSend byteToSend `uc  1 a 1 2 ]
+"1843
+} 0

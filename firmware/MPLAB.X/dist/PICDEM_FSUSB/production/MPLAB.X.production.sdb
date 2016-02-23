@@ -1,0 +1,1907 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"82 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/picdem_fs_usb/system.c
+[e E4693 . `uc
+SYSTEM_STATE_USB_START 0
+SYSTEM_STATE_USB_SUSPEND 1
+SYSTEM_STATE_USB_RESUME 2
+]
+"86
+[e E4450 . `uc
+LED_NONE 0
+LED_D1 1
+LED_D2 2
+LED_D3 3
+LED_D4 4
+]
+"87
+[e E4441 . `uc
+BUTTON_NONE 0
+BUTTON_S2 1
+BUTTON_S3 2
+]
+"254 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[e E4441 . `uc
+BUTTON_NONE 0
+BUTTON_S2 1
+BUTTON_S3 2
+]
+"303
+[e E4889 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"86 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[e E4693 . `uc
+SYSTEM_STATE_USB_START 0
+SYSTEM_STATE_USB_SUSPEND 1
+SYSTEM_STATE_USB_RESUME 2
+]
+"127
+[e E4769 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"197
+[e E4710 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"198
+[e E4778 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"81 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_led_usb_status.c
+[e E4478 . `uc
+LED_NONE 0
+LED_D1 1
+LED_D2 2
+LED_D3 3
+LED_D4 4
+]
+"85
+[e E4769 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"76 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/adc.c
+[e E30 . `uc
+ADC_CHANNEL_0 0
+]
+"178
+[e E33 . `uc
+ADC_CONFIGURATION_DEFAULT 0
+]
+"96 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/buttons.c
+[e E4441 . `uc
+BUTTON_NONE 0
+BUTTON_S2 1
+BUTTON_S3 2
+]
+"97 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/leds.c
+[e E2 . `uc
+LED_NONE 0
+LED_D1 1
+LED_D2 2
+LED_D3 3
+LED_D4 4
+]
+"131 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[e E4771 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"731
+[e E4712 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"2035
+[e E4780 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"24 /Users/ShaunHoltzman/Desktop/IMU/i2c/i2c_idle.c
+[v _IdleI2C IdleI2C `(v  1 e 0 0 ]
+"14 /Users/ShaunHoltzman/Desktop/IMU/i2c/i2c_open.c
+[v _OpenI2C OpenI2C `(v  1 e 0 0 ]
+"11 /Users/ShaunHoltzman/Desktop/IMU/i2c/i2c_read.c
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+"12 /Users/ShaunHoltzman/Desktop/IMU/i2c/i2c_writ.c
+[v _WriteI2C WriteI2C `(c  1 e 1 0 ]
+"148 /Users/ShaunHoltzman/Desktop/IMU/MPU6050.h
+[v _MPU6050_Init MPU6050_Init `(v  1 e 0 0 ]
+"267
+[v _MPU6050_ReadAccX MPU6050_ReadAccX `(i  1 e 2 0 ]
+"298
+[v _MPU6050_ReadAccY MPU6050_ReadAccY `(i  1 e 2 0 ]
+"330
+[v _MPU6050_ReadAccZ MPU6050_ReadAccZ `(i  1 e 2 0 ]
+"115 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/adc.c
+[v _ADC_Read10bit ADC_Read10bit `(ui  1 e 2 0 ]
+"95 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/buttons.c
+[v _BUTTON_IsPressed BUTTON_IsPressed `(uc  1 e 1 0 ]
+"128
+[v _BUTTON_Enable BUTTON_Enable `(v  1 e 0 0 ]
+[v i2_BUTTON_Enable BUTTON_Enable `(v  1 e 0 0 ]
+"96 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/leds.c
+[v _LED_On LED_On `(v  1 e 0 0 ]
+"137
+[v _LED_Off LED_Off `(v  1 e 0 0 ]
+"257
+[v _LED_Enable LED_Enable `(v  1 e 0 0 ]
+[v i2_LED_Enable LED_Enable `(v  1 e 0 0 ]
+"295 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+"495
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 0 0 ]
+"896
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 0 0 ]
+"1013
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+"1370
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 0 0 ]
+"1434
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 0 0 ]
+"1506
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 0 0 ]
+"1561
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 0 USBConfigureEndpoint ]
+"1634
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 0 USBCtrlEPServiceComplete ]
+"1789
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
+"1870
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
+"1986
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
+"2061
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 0 USBStdGetDscHandler ]
+"2147
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
+"2220
+[v _USBStallHandler USBStallHandler `(v  1 s 0 USBStallHandler ]
+"2263
+[v _USBSuspend USBSuspend `(v  1 s 0 USBSuspend ]
+"2321
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 0 USBWakeFromSuspend ]
+"2390
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
+"2483
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 0 USBCtrlTrfSetupHandler ]
+"2555
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 0 USBCtrlTrfOutHandler ]
+"2609
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
+"2703
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 0 USBCheckStdRequest ]
+"2771
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
+"3042
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 0 0 ]
+"153 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 0 0 ]
+"212 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseInitialize APP_DeviceMouseInitialize `(v  1 e 0 0 ]
+"246
+[v _APP_DeviceMouseTasks APP_DeviceMouseTasks `(v  1 e 0 0 ]
+"273
+[v _APP_DeviceMouseIdleRateCallback APP_DeviceMouseIdleRateCallback `(v  1 e 0 0 ]
+"296
+[v _APP_DeviceMouseSOFHandler APP_DeviceMouseSOFHandler `(v  1 e 0 0 ]
+"75 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_led_usb_status.c
+[v _APP_LEDUpdateUSBStatus APP_LEDUpdateUSBStatus `(v  1 e 0 0 ]
+"84 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _main main `(v  1 e 0 0 ]
+"196
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+"261
+[v _LCDinit LCDinit `(v  1 e 0 0 ]
+"292
+[v _LCDnibble LCDnibble `(v  1 e 0 0 ]
+"307
+[v _LCDcmd LCDcmd `(v  1 e 0 0 ]
+"317
+[v _LCDdata LCDdata `(v  1 e 0 0 ]
+"327
+[v _LCDstring LCDstring `(v  1 e 0 0 ]
+"338
+[v _LCDdouble LCDdouble `(v  1 e 0 0 ]
+"81 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/picdem_fs_usb/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+[v i2_SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+"101
+[v _SYS_InterruptHigh SYS_InterruptHigh `II(v  1 e 0 0 ]
+"42 /Applications/microchip/xc8/v1.35/sources/common/altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"32 /Applications/microchip/xc8/v1.35/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"4 /Applications/microchip/xc8/v1.35/sources/common/evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+"12 /Applications/microchip/xc8/v1.35/sources/common/exp.c
+[v _exp exp `(d  1 e 3 0 ]
+"62 /Applications/microchip/xc8/v1.35/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"13 /Applications/microchip/xc8/v1.35/sources/common/floor.c
+[v _floor floor `(d  1 e 3 0 ]
+"254 /Applications/microchip/xc8/v1.35/sources/common/frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"277
+[v _ldexp ldexp `(d  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v1.35/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 /Applications/microchip/xc8/v1.35/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 /Applications/microchip/xc8/v1.35/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v1.35/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v1.35/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 /Applications/microchip/xc8/v1.35/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 /Applications/microchip/xc8/v1.35/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"35 /Applications/microchip/xc8/v1.35/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"5 /Applications/microchip/xc8/v1.35/sources/common/log.c
+[v _log log `(d  1 e 3 0 ]
+"8 /Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"11 /Applications/microchip/xc8/v1.35/sources/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"8 /Applications/microchip/xc8/v1.35/sources/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+"5 /Applications/microchip/xc8/v1.35/sources/common/pow.c
+[v _pow pow `(d  1 e 3 0 ]
+"10 /Applications/microchip/xc8/v1.35/sources/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 /Applications/microchip/xc8/v1.35/sources/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 /Applications/microchip/xc8/v1.35/sources/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v1.35/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"131 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceState USBDeviceState `VEE4889  1 e 1 0 ]
+"132
+[v _USBActiveConfiguration USBActiveConfiguration `VEuc  1 e 1 0 ]
+"133
+[v _USBAlternateInterface USBAlternateInterface `VE[1]uc  1 e 1 0 ]
+[s S1720 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"134
+[s S1729 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S1736 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S1740 _BD_STAT 1 `uc 1 Val 1 0 `S1720 1 . 1 0 `S1729 1 . 1 0 `S1736 1 . 1 0 ]
+[s S1745 . 4 `S1740 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S1750 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S1754 __BDT 4 `S1745 1 . 4 0 `S1750 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.39VES1754  1 e 2 0 ]
+"135
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.39VES1754  1 e 2 0 ]
+"136
+[v _pBDTEntryOut pBDTEntryOut `[2]*.39VES1754  1 e 4 0 ]
+"137
+[v _pBDTEntryIn pBDTEntryIn `[2]*.39VES1754  1 e 4 0 ]
+"138
+[v _shortPacketStatus shortPacketStatus `VEuc  1 e 1 0 ]
+"139
+[v _controlTransferState controlTransferState `VEuc  1 e 1 0 ]
+[u S1759 . 3 `*.2uc 1 bRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2ui 1 wRam 3 0 `*.2Cui 1 wRom 3 0 ]
+"140
+[s S1764 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
+]
+[u S1769 . 1 `S1764 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S1772 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[u S1775 . 2 `ui 1 Val 2 0 `[2]uc 1 v 2 0 `S1772 1 byte 2 0 ]
+[s S1779 . 6 `S1759 1 pSrc 3 0 `S1769 1 info 1 3 `S1775 1 wCount 2 4 ]
+[v _inPipes inPipes `VE[1]S1779  1 e 6 0 ]
+[u S1783 . 3 `*.2uc 1 bRam 3 0 `*.2ui 1 wRam 3 0 ]
+"141
+[s S1786 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S1789 . 1 `S1786 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S1793 . 8 `S1783 1 pDst 3 0 `S1789 1 info 1 3 `S1775 1 wCount 2 4 `*.37(v 1 pFunc 2 6 ]
+[v _outPipes outPipes `VE[1]S1793  1 e 8 0 ]
+"142
+[v _pDst pDst `*.39VEuc  1 e 2 0 ]
+"143
+[v _RemoteWakeup RemoteWakeup `VEuc  1 e 1 0 ]
+"144
+[v _USBBusIsSuspended USBBusIsSuspended `VEuc  1 e 1 0 ]
+[s S1798 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"145
+[u S1803 __USTAT 1 `S1798 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `VES1803  1 e 1 0 ]
+"146
+[v _endpoint_number endpoint_number `VEuc  1 e 1 0 ]
+"147
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `VEuc  1 e 1 0 ]
+[s S1806 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"148
+[u S1809 . 1 `S1806 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `VE[2]S1809  1 e 2 0 ]
+"149
+[v _ep_data_out ep_data_out `VE[2]S1809  1 e 2 0 ]
+"150
+[v _USBStatusStageTimeoutCounter USBStatusStageTimeoutCounter `VEuc  1 e 1 0 ]
+"151
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEuc  1 e 1 0 ]
+"152
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEuc  1 e 1 0 ]
+"153
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEuc  1 e 1 0 ]
+"154
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEuc  1 e 1 0 ]
+"155
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEuc  1 e 1 0 ]
+"156
+[v _USB1msTickCount USB1msTickCount `VEul  1 e 4 0 ]
+"157
+[v _USBTicksSinceSuspendEnd USBTicksSinceSuspendEnd `VEuc  1 e 1 0 ]
+"164
+[v _BDT BDT `VE[8]S1754  1 e 32 @1024 ]
+[s S1812 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `ui 1 wValue 2 2 `ui 1 wIndex 2 4 `ui 1 wLength 2 6 ]
+"169
+[s S1839 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S1775 1 W_Value 2 2 `S1775 1 W_Index 2 4 `S1775 1 W_Length 2 6 ]
+[s S1845 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1856 . 1 `uc 1 recipient 1 0 :5:0 
+`uc 1 type 1 0 :2:5 
+`uc 1 direction 1 0 :1:7 
+]
+[u S1860 . 1 `uc 1 bmRequestType 1 0 `S1856 1 . 1 0 ]
+[s S1863 . 1 `S1860 1 requestInfo 1 0 ]
+[s S1865 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `ui 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1873 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1882 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1891 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1900 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1909 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S1920 . 8 `S1812 1 . 8 0 `S1839 1 . 8 0 `S1845 1 . 8 0 `S1863 1 . 1 0 `S1865 1 . 8 0 `S1873 1 . 8 0 `S1882 1 . 8 0 `S1891 1 . 8 0 `S1900 1 . 8 0 `S1909 1 . 8 0 ]
+[v _SetupPkt SetupPkt `VES1920  1 e 8 @1056 ]
+"170
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @1064 ]
+"79 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device_hid.c
+[v _idle_rate idle_rate `uc  1 s 1 idle_rate ]
+"80
+[v _active_protocol active_protocol `uc  1 s 1 active_protocol ]
+"39 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _acx acx `ui  1 e 2 0 ]
+"40
+[v _acy acy `ui  1 e 2 0 ]
+"41
+[v _acz acz `ui  1 e 2 0 ]
+[s S686 . 50 `[50]uc 1 report 50 0 ]
+"50
+[v _hid_rpt01 hid_rpt01 `CS686  1 e 50 0 ]
+[s S688 . 1 `uc 1 button1 1 0 :1:0 
+`uc 1 button2 1 0 :1:1 
+`uc 1 button3 1 0 :1:2 
+`uc 1 . 1 0 :5:3 
+]
+"170
+[s S693 . 1 `uc 1 primary 1 0 :1:0 
+`uc 1 secondary 1 0 :1:1 
+`uc 1 tertiary 1 0 :1:2 
+`uc 1 . 1 0 :5:3 
+]
+[u S698 . 1 `S688 1 . 1 0 `S693 1 . 1 0 `uc 1 value 1 0 ]
+[s S702 . 3 `S698 1 buttons 1 0 `uc 1 x 1 1 `uc 1 y 1 2 ]
+[v _mouseReport mouseReport `S702  1 s 3 mouseReport ]
+[s S706 . 4 `*.39v 1 handle 2 0 `uc 1 idleRate 1 2 `uc 1 idleRateSofCount 1 3 ]
+"198
+[s S710 . 10 `uc 1 sentStop 1 0 `uc 1 lastButtonState 1 1 `uc 1 vectorPosition 1 2 `ui 1 movementCount 2 3 `uc 1 movementMode 1 5 `[1]S706 1 inputReport 4 6 ]
+[v _mouse mouse `S710  1 s 10 mouse ]
+"56 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _ax ax `[4]uc  1 e 4 0 ]
+"57
+[v _ay ay `[4]uc  1 e 4 0 ]
+"58
+[v _az az `[4]uc  1 e 4 0 ]
+"62
+[v _accx accx `i  1 e 2 0 ]
+[v _accy accy `i  1 e 2 0 ]
+[v _accz accz `i  1 e 2 0 ]
+"63
+[v _gforcex gforcex `d  1 e 3 0 ]
+[v _gforcey gforcey `d  1 e 3 0 ]
+[v _gforcez gforcez `d  1 e 3 0 ]
+"64
+[v _gforcescale gforcescale `d  1 e 3 0 ]
+[s S1222 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `ui 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `ui 1 idVendor 2 8 `ui 1 idProduct 2 10 `ui 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
+"161 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/usb_descriptors.c
+[v _device_dsc device_dsc `CS1222  1 e 18 0 ]
+"180
+[v _configDescriptor1 configDescriptor1 `C[34]uc  1 e 34 0 ]
+[s S1237 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]ui 1 string 2 2 ]
+"222
+[v _sd000 sd000 `CS1237  1 e 4 0 ]
+[s S1241 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]ui 1 string 50 2 ]
+"227
+[v _sd001 sd001 `CS1241  1 e 52 0 ]
+[s S1245 . 46 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[22]ui 1 string 44 2 ]
+"234
+[v _sd002 sd002 `CS1245  1 e 46 0 ]
+"241
+[v _USB_CD_Ptr USB_CD_Ptr `C[1]*.25Cuc  1 e 2 0 ]
+"247
+[v _USB_SD_Ptr USB_SD_Ptr `C[3]*.25Cuc  1 e 6 0 ]
+"364 /Applications/microchip/xc8/v1.35/include/pic18f4550.h
+[v _UIR UIR `VEuc  1 e 1 @3944 ]
+[s S1985 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"380
+[u S1993 . 1 `S1985 1 . 1 0 ]
+[v _UIRbits UIRbits `VES1993  1 e 1 @3944 ]
+"419
+[v _UIE UIE `VEuc  1 e 1 @3945 ]
+[s S2004 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"435
+[u S2012 . 1 `S2004 1 . 1 0 ]
+[v _UIEbits UIEbits `VES2012  1 e 1 @3945 ]
+"474
+[v _UEIR UEIR `VEuc  1 e 1 @3946 ]
+"524
+[v _UEIE UEIE `VEuc  1 e 1 @3947 ]
+"574
+[v _USTAT USTAT `VEuc  1 e 1 @3948 ]
+"633
+[v _UCON UCON `VEuc  1 e 1 @3949 ]
+[s S919 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"649
+[u S927 . 1 `S919 1 . 1 0 ]
+[v _UCONbits UCONbits `VES927  1 e 1 @3949 ]
+"683
+[v _UADDR UADDR `VEuc  1 e 1 @3950 ]
+"746
+[v _UCFG UCFG `VEuc  1 e 1 @3951 ]
+"827
+[v _UEP0 UEP0 `VEuc  1 e 1 @3952 ]
+[s S2356 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"879
+[s S2362 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 EP0CONDIS 1 0 :1:3 
+]
+[s S2365 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 EP0HSHK 1 0 :1:4 
+]
+[s S2368 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 EP0INEN 1 0 :1:1 
+]
+[s S2371 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 EP0OUTEN 1 0 :1:2 
+]
+[s S2374 . 1 `uc 1 EP0STALL 1 0 :1:0 
+]
+[s S2376 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 EPCONDIS0 1 0 :1:3 
+]
+[s S2379 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 EPHSHK0 1 0 :1:4 
+]
+[s S2382 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 EPINEN0 1 0 :1:1 
+]
+[s S2385 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 EPOUTEN0 1 0 :1:2 
+]
+[s S2388 . 1 `uc 1 EPSTALL0 1 0 :1:0 
+]
+[u S2390 . 1 `S2356 1 . 1 0 `S2362 1 . 1 0 `S2365 1 . 1 0 `S2368 1 . 1 0 `S2371 1 . 1 0 `S2374 1 . 1 0 `S2376 1 . 1 0 `S2379 1 . 1 0 `S2382 1 . 1 0 `S2385 1 . 1 0 `S2388 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES2390  1 e 1 @3952 ]
+"958
+[v _UEP1 UEP1 `VEuc  1 e 1 @3953 ]
+[s S257 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2757
+[s S750 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S758 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S761 . 1 `S257 1 . 1 0 `S750 1 . 1 0 `S758 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES761  1 e 1 @3969 ]
+"3742
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S1014 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"3790
+[s S1023 . 1 `uc 1 LD0 1 0 :1:0 
+]
+[s S1025 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+]
+[s S1028 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LD2 1 0 :1:2 
+]
+[s S1031 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LD3 1 0 :1:3 
+]
+[s S1034 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LD4 1 0 :1:4 
+]
+[s S1037 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LD5 1 0 :1:5 
+]
+[s S1040 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LD6 1 0 :1:6 
+]
+[s S1043 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S1046 . 1 `S1014 1 . 1 0 `S1023 1 . 1 0 `S1025 1 . 1 0 `S1028 1 . 1 0 `S1031 1 . 1 0 `S1034 1 . 1 0 `S1037 1 . 1 0 `S1040 1 . 1 0 `S1043 1 . 1 0 ]
+[v _LATDbits LATDbits `VES1046  1 e 1 @3980 ]
+[s S1407 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+]
+"4006
+[s S1415 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+]
+[u S1423 . 1 `S1407 1 . 1 0 `S1415 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES1423  1 e 1 @3986 ]
+[s S248 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"4205
+[u S266 . 1 `S248 1 . 1 0 `S257 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES266  1 e 1 @3987 ]
+"4565
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S1654 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"4597
+[s S1663 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+[u S1672 . 1 `S1654 1 . 1 0 `S1663 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES1672  1 e 1 @3989 ]
+[s S486 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"5062
+[s S495 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[s S498 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[s S501 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+]
+[u S504 . 1 `S486 1 . 1 0 `S495 1 . 1 0 `S498 1 . 1 0 `S501 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES504  1 e 1 @3998 ]
+[s S1931 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 HLVDIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 USBIE 1 0 :1:5 
+`uc 1 CMIE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"5230
+[s S1940 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIE 1 0 :1:2 
+]
+[u S1943 . 1 `S1931 1 . 1 0 `S1940 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES1943  1 e 1 @4000 ]
+[s S2027 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 USBIF 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"5300
+[s S2036 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+]
+[u S2039 . 1 `S2027 1 . 1 0 `S2036 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES2039  1 e 1 @4001 ]
+[s S2211 . 1 `uc 1 CCP2IP 1 0 :1:0 
+`uc 1 TMR3IP 1 0 :1:1 
+`uc 1 HLVDIP 1 0 :1:2 
+`uc 1 BCLIP 1 0 :1:3 
+`uc 1 EEIP 1 0 :1:4 
+`uc 1 USBIP 1 0 :1:5 
+`uc 1 CMIP 1 0 :1:6 
+`uc 1 OSCFIP 1 0 :1:7 
+]
+"5370
+[s S2220 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIP 1 0 :1:2 
+]
+[u S2223 . 1 `S2211 1 . 1 0 `S2220 1 . 1 0 ]
+[v _IPR2bits IPR2bits `VES2223  1 e 1 @4002 ]
+"7103
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+[s S1492 . 1 `uc 1 ADCS 1 0 :3:0 
+`uc 1 ACQT 1 0 :3:3 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"7124
+[s S1497 . 1 `uc 1 ADCS0 1 0 :1:0 
+`uc 1 ADCS1 1 0 :1:1 
+`uc 1 ADCS2 1 0 :1:2 
+`uc 1 ACQT0 1 0 :1:3 
+`uc 1 ACQT1 1 0 :1:4 
+`uc 1 ACQT2 1 0 :1:5 
+]
+[u S1504 . 1 `S1492 1 . 1 0 `S1497 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES1504  1 e 1 @4032 ]
+[s S1446 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 VCFG 1 0 :2:4 
+]
+"7204
+[s S1449 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+]
+[s S1456 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+]
+[s S1459 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG01 1 0 :1:4 
+]
+[s S1462 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S1465 . 1 `S1446 1 . 1 0 `S1449 1 . 1 0 `S1456 1 . 1 0 `S1459 1 . 1 0 `S1462 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES1465  1 e 1 @4033 ]
+"7263
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S1330 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"7311
+[s S1333 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S1340 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S1347 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S1350 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S1353 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S1356 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S1359 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S1362 . 1 `S1330 1 . 1 0 `S1333 1 . 1 0 `S1330 1 . 1 0 `S1340 1 . 1 0 `S1347 1 . 1 0 `S1350 1 . 1 0 `S1353 1 . 1 0 `S1356 1 . 1 0 `S1359 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1362  1 e 1 @4034 ]
+"7391
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"7397
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"7403
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+[s S21 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"7420
+[u S30 . 1 `S21 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES30  1 e 1 @4037 ]
+"7464
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S459 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"7484
+[s S465 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S470 . 1 `S459 1 . 1 0 `S465 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES470  1 e 1 @4038 ]
+"7533
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S54 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"7635
+[s S57 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S60 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S75 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S80 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S91 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S94 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S97 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S102 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S107 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S112 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA 1 0 :1:5 
+]
+[s S115 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+]
+[s S118 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+]
+[s S121 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP 1 0 :1:4 
+]
+[s S124 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S127 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S130 . 1 `S54 1 . 1 0 `S57 1 . 1 0 `S60 1 . 1 0 `S54 1 . 1 0 `S57 1 . 1 0 `S75 1 . 1 0 `S80 1 . 1 0 `S86 1 . 1 0 `S91 1 . 1 0 `S94 1 . 1 0 `S97 1 . 1 0 `S102 1 . 1 0 `S107 1 . 1 0 `S112 1 . 1 0 `S115 1 . 1 0 `S118 1 . 1 0 `S121 1 . 1 0 `S124 1 . 1 0 `S127 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES130  1 e 1 @4039 ]
+"7799
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"7805
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+[s S2133 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"8194
+[s S2135 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S2138 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S2141 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S2144 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S2147 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S2156 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_IPEN 1 0 :1:7 
+]
+[s S2159 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 nIPEN 1 0 :1:7 
+]
+[u S2167 . 1 `S2133 1 . 1 0 `S2135 1 . 1 0 `S2138 1 . 1 0 `S2141 1 . 1 0 `S2144 1 . 1 0 `S2147 1 . 1 0 `S2156 1 . 1 0 `S2159 1 . 1 0 ]
+[v _RCONbits RCONbits `VES2167  1 e 1 @4048 ]
+[s S2239 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"9211
+[s S2248 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S2257 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[s S2266 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S2275 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S2279 . 1 `S2239 1 . 1 0 `S2248 1 . 1 0 `S2257 1 . 1 0 `S2266 1 . 1 0 `S2275 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES2279  1 e 1 @4082 ]
+"3 /Applications/microchip/xc8/v1.35/sources/common/errno.c
+[v _errno errno `i  1 e 2 0 ]
+"84 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"101
+[v main@i i `i  1 a 2 96 ]
+"172
+} 0
+"295 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+{
+"297
+[v USBDeviceInit@i i `uc  1 a 1 50 ]
+"389
+} 0
+"8 /Applications/microchip/xc8/v1.35/sources/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"15
+[v memset@p p `*.39uc  1 a 2 48 ]
+"8
+[v memset@p1 p1 `*.39v  1 p 2 42 ]
+[v memset@c c `i  1 p 2 44 ]
+[v memset@n n `ui  1 p 2 46 ]
+"22
+} 0
+"1370 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 0 0 ]
+{
+"1400
+} 0
+"81 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/picdem_fs_usb/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+{
+[v SYSTEM_Initialize@state state `E4693  1 a 1 wreg ]
+[v SYSTEM_Initialize@state state `E4693  1 a 1 wreg ]
+[v SYSTEM_Initialize@state state `E4693  1 a 1 43 ]
+"96
+} 0
+"257 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/leds.c
+[v _LED_Enable LED_Enable `(v  1 e 0 0 ]
+{
+[v LED_Enable@led led `E2  1 a 1 wreg ]
+[v LED_Enable@led led `E2  1 a 1 wreg ]
+[v LED_Enable@led led `E2  1 a 1 42 ]
+"280
+} 0
+"128 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/buttons.c
+[v _BUTTON_Enable BUTTON_Enable `(v  1 e 0 0 ]
+{
+[v BUTTON_Enable@button button `E4441  1 a 1 wreg ]
+[v BUTTON_Enable@button button `E4441  1 a 1 wreg ]
+[v BUTTON_Enable@button button `E4441  1 a 1 42 ]
+"143
+} 0
+"14 /Users/ShaunHoltzman/Desktop/IMU/i2c/i2c_open.c
+[v _OpenI2C OpenI2C `(v  1 e 0 0 ]
+{
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenI2C@slew slew `uc  1 p 1 42 ]
+"16
+[v OpenI2C@sync_mode sync_mode `uc  1 a 1 43 ]
+"26
+} 0
+"330 /Users/ShaunHoltzman/Desktop/IMU/MPU6050.h
+[v _MPU6050_ReadAccZ MPU6050_ReadAccZ `(i  1 e 2 0 ]
+{
+"333
+[v MPU6050_ReadAccZ@acczl acczl `i  1 a 2 6 ]
+[v MPU6050_ReadAccZ@acczh acczh `i  1 a 2 4 ]
+[v MPU6050_ReadAccZ@accz accz `i  1 a 2 2 ]
+"332
+[v MPU6050_ReadAccZ@write write `i  1 a 2 0 ]
+"360
+} 0
+"298
+[v _MPU6050_ReadAccY MPU6050_ReadAccY `(i  1 e 2 0 ]
+{
+"301
+[v MPU6050_ReadAccY@accyl accyl `i  1 a 2 6 ]
+[v MPU6050_ReadAccY@accyh accyh `i  1 a 2 4 ]
+[v MPU6050_ReadAccY@accy accy `i  1 a 2 2 ]
+"300
+[v MPU6050_ReadAccY@write write `i  1 a 2 0 ]
+"328
+} 0
+"267
+[v _MPU6050_ReadAccX MPU6050_ReadAccX `(i  1 e 2 0 ]
+{
+"270
+[v MPU6050_ReadAccX@accxl accxl `i  1 a 2 6 ]
+[v MPU6050_ReadAccX@accxh accxh `i  1 a 2 4 ]
+[v MPU6050_ReadAccX@accx accx `i  1 a 2 2 ]
+"269
+[v MPU6050_ReadAccX@write write `i  1 a 2 0 ]
+"296
+} 0
+"11 /Users/ShaunHoltzman/Desktop/IMU/i2c/i2c_read.c
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+{
+"17
+} 0
+"148 /Users/ShaunHoltzman/Desktop/IMU/MPU6050.h
+[v _MPU6050_Init MPU6050_Init `(v  1 e 0 0 ]
+{
+"174
+} 0
+"12 /Users/ShaunHoltzman/Desktop/IMU/i2c/i2c_writ.c
+[v _WriteI2C WriteI2C `(c  1 e 1 0 ]
+{
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+"14
+[v WriteI2C@data_out data_out `uc  1 a 1 43 ]
+"43
+} 0
+"24 /Users/ShaunHoltzman/Desktop/IMU/i2c/i2c_idle.c
+[v _IdleI2C IdleI2C `(v  1 e 0 0 ]
+{
+"28
+} 0
+"327 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _LCDstring LCDstring `(v  1 e 0 0 ]
+{
+"329
+[v LCDstring@i i `i  1 a 2 48 ]
+"327
+[v LCDstring@str str `*.39uc  1 p 2 46 ]
+"335
+} 0
+"261
+[v _LCDinit LCDinit `(v  1 e 0 0 ]
+{
+"289
+} 0
+"307
+[v _LCDcmd LCDcmd `(v  1 e 0 0 ]
+{
+[v LCDcmd@byte byte `uc  1 a 1 wreg ]
+[v LCDcmd@byte byte `uc  1 a 1 wreg ]
+"309
+[v LCDcmd@byte byte `uc  1 a 1 44 ]
+"314
+} 0
+"338
+[v _LCDdouble LCDdouble `(v  1 e 0 0 ]
+{
+"341
+[v LCDdouble@i i `i  1 a 2 94 ]
+"340
+[v LCDdouble@digit digit `i  1 a 2 92 ]
+"342
+[v LCDdouble@zflag zflag `i  1 a 2 87 ]
+"338
+[v LCDdouble@a a `d  1 p 3 78 ]
+"362
+} 0
+"5 /Applications/microchip/xc8/v1.35/sources/common/pow.c
+[v _pow pow `(d  1 e 3 0 ]
+{
+"8
+[v pow@yi yi `ul  1 a 4 74 ]
+"7
+[v pow@sign sign `uc  1 a 1 73 ]
+"5
+[v pow@x x `d  1 p 3 61 ]
+[v pow@y y `d  1 p 3 64 ]
+"31
+} 0
+"5 /Applications/microchip/xc8/v1.35/sources/common/log.c
+[v _log log `(d  1 e 3 0 ]
+{
+"7
+[v log@exponent exponent `i  1 a 2 48 ]
+"5
+[v log@x x `d  1 p 3 45 ]
+"9
+[v log@coeff coeff `C[9]d  1 s 27 coeff ]
+"36
+} 0
+"12 /Applications/microchip/xc8/v1.35/sources/common/exp.c
+[v _exp exp `(d  1 e 3 0 ]
+{
+"14
+[v exp@exponent exponent `i  1 a 2 58 ]
+"15
+[v exp@sign sign `uc  1 a 1 60 ]
+"12
+[v exp@x x `d  1 p 3 52 ]
+"17
+[v exp@coeff coeff `C[10]d  1 s 30 coeff ]
+"57
+} 0
+"277 /Applications/microchip/xc8/v1.35/sources/common/frexp.c
+[v _ldexp ldexp `(d  1 e 3 0 ]
+{
+[v ldexp@value value `d  1 p 3 45 ]
+[v ldexp@newexp newexp `i  1 p 2 48 ]
+"307
+} 0
+"13 /Applications/microchip/xc8/v1.35/sources/common/floor.c
+[v _floor floor `(d  1 e 3 0 ]
+{
+"15
+[v floor@i i `d  1 a 3 46 ]
+"16
+[v floor@expon expon `i  1 a 2 49 ]
+"13
+[v floor@x x `d  1 p 3 43 ]
+"30
+} 0
+"254 /Applications/microchip/xc8/v1.35/sources/common/frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+{
+[v frexp@value value `d  1 p 3 42 ]
+[v frexp@eptr eptr `*.39i  1 p 2 45 ]
+"274
+} 0
+"44 /Applications/microchip/xc8/v1.35/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 28 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 32 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 27 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 18 ]
+"73
+} 0
+"4 /Applications/microchip/xc8/v1.35/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 42 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 45 ]
+"13
+} 0
+"42 /Applications/microchip/xc8/v1.35/sources/common/altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+{
+"44
+[v ___altoft@sign sign `uc  1 a 1 42 ]
+[v ___altoft@exp exp `uc  1 a 1 41 ]
+"42
+[v ___altoft@c c `l  1 p 4 33 ]
+"57
+} 0
+"4 /Applications/microchip/xc8/v1.35/sources/common/evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+{
+"6
+[v eval_poly@res res `d  1 a 3 42 ]
+"4
+[v eval_poly@x x `d  1 p 3 33 ]
+[v eval_poly@d d `*.25Cd  1 p 2 36 ]
+[v eval_poly@n n `i  1 p 2 38 ]
+"12
+} 0
+"15 /Applications/microchip/xc8/v1.35/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 46 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 42 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 44 ]
+"53
+} 0
+"62 /Applications/microchip/xc8/v1.35/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 13 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 17 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 16 ]
+[v ___ftmul@exp exp `uc  1 a 1 12 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 3 ]
+[v ___ftmul@f2 f2 `f  1 p 3 6 ]
+"157
+} 0
+"20 /Applications/microchip/xc8/v1.35/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 33 ]
+[v ___ftsub@f2 f2 `f  1 p 3 36 ]
+"27
+} 0
+"86 /Applications/microchip/xc8/v1.35/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 32 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 31 ]
+[v ___ftadd@sign sign `uc  1 a 1 30 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 21 ]
+[v ___ftadd@f2 f2 `f  1 p 3 24 ]
+"148
+} 0
+"15 /Applications/microchip/xc8/v1.35/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 18 ]
+"20
+} 0
+"54 /Applications/microchip/xc8/v1.35/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 13 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 17 ]
+[v ___ftdiv@exp exp `uc  1 a 1 16 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 12 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 3 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 6 ]
+"86
+} 0
+"32 /Applications/microchip/xc8/v1.35/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 50 ]
+"32
+[v ___awtoft@c c `i  1 p 2 0 ]
+"42
+} 0
+"35 /Applications/microchip/xc8/v1.35/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 50 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 0 ]
+"46
+} 0
+"62 /Applications/microchip/xc8/v1.35/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 42 ]
+[v ___ftpack@exp exp `uc  1 p 1 45 ]
+[v ___ftpack@sign sign `uc  1 p 1 46 ]
+"86
+} 0
+"317 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _LCDdata LCDdata `(v  1 e 0 0 ]
+{
+[v LCDdata@byte byte `uc  1 a 1 wreg ]
+[v LCDdata@byte byte `uc  1 a 1 wreg ]
+"319
+[v LCDdata@byte byte `uc  1 a 1 45 ]
+"325
+} 0
+"292
+[v _LCDnibble LCDnibble `(v  1 e 0 0 ]
+{
+[v LCDnibble@nibble nibble `uc  1 a 1 wreg ]
+[v LCDnibble@nibble nibble `uc  1 a 1 wreg ]
+"295
+[v LCDnibble@nibble nibble `uc  1 a 1 43 ]
+"304
+} 0
+"246 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseTasks APP_DeviceMouseTasks `(v  1 e 0 0 ]
+{
+"248
+[v APP_DeviceMouseTasks@currentButtonState currentButtonState `uc  1 a 1 49 ]
+"246
+[v APP_DeviceMouseTasks@accx accx `i  1 p 2 43 ]
+[v APP_DeviceMouseTasks@accy accy `i  1 p 2 45 ]
+[v APP_DeviceMouseTasks@accz accz `i  1 p 2 47 ]
+"271
+} 0
+"95 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/buttons.c
+[v _BUTTON_IsPressed BUTTON_IsPressed `(uc  1 e 1 0 ]
+{
+[v BUTTON_IsPressed@button button `E4441  1 a 1 wreg ]
+[v BUTTON_IsPressed@button button `E4441  1 a 1 wreg ]
+[v BUTTON_IsPressed@button button `E4441  1 a 1 42 ]
+"110
+} 0
+"101 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/picdem_fs_usb/system.c
+[v _SYS_InterruptHigh SYS_InterruptHigh `II(v  1 e 0 0 ]
+{
+"104
+} 0
+"495 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 0 0 ]
+{
+"497
+[v USBDeviceTasks@i i `uc  1 a 1 27 ]
+"845
+} 0
+"295
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+{
+[v i2USBDeviceInit@i USBDeviceInit `uc  1 a 1 8 ]
+"389
+} 0
+"2321
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 0 USBWakeFromSuspend ]
+{
+"2367
+} 0
+"2263
+[v _USBSuspend USBSuspend `(v  1 s 0 USBSuspend ]
+{
+"2304
+} 0
+"2220
+[v _USBStallHandler USBStallHandler `(v  1 s 0 USBStallHandler ]
+{
+"2245
+} 0
+"3042
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 0 0 ]
+{
+"3060
+} 0
+"2390
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
+{
+"2441
+} 0
+"11 /Applications/microchip/xc8/v1.35/sources/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"20
+[v memcpy@s s `*.39Cuc  1 a 2 8 ]
+"18
+[v memcpy@d d `*.39uc  1 a 2 6 ]
+"11
+[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v memcpy@n n `ui  1 p 2 4 ]
+"32
+} 0
+"2483 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 0 USBCtrlTrfSetupHandler ]
+{
+"2532
+} 0
+"1634
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 0 USBCtrlEPServiceComplete ]
+{
+"1766
+} 0
+"1506
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 0 0 ]
+{
+"1536
+} 0
+"2703
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 0 USBCheckStdRequest ]
+{
+"2750
+} 0
+"1986
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
+{
+"1988
+[v USBStdSetCfgHandler@i i `uc  1 a 1 20 ]
+"2042
+} 0
+"8 /Applications/microchip/xc8/v1.35/sources/common/memset.c
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+{
+[v i2memset@p memset `*.39uc  1 a 2 6 ]
+[v i2memset@p1 p1 `*.39v  1 p 2 0 ]
+[v i2memset@c c `i  1 p 2 2 ]
+[v i2memset@n n `ui  1 p 2 4 ]
+"22
+} 0
+"2147 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
+{
+[s S1720 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2179
+[s S1729 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S1736 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S1740 _BD_STAT 1 `uc 1 Val 1 0 `S1720 1 . 1 0 `S1729 1 . 1 0 `S1736 1 . 1 0 ]
+[s S1745 . 4 `S1740 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S1750 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S1754 __BDT 4 `S1745 1 . 4 0 `S1750 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdGetStatusHandler@p p `*.39S1754  1 a 2 1 ]
+"2202
+} 0
+"2061
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 0 USBStdGetDscHandler ]
+{
+"2130
+} 0
+"2771
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
+{
+[s S1720 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2773
+[s S1729 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S1736 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S1740 _BD_STAT 1 `uc 1 Val 1 0 `S1720 1 . 1 0 `S1729 1 . 1 0 `S1736 1 . 1 0 ]
+[s S1745 . 4 `S1740 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S1750 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S1754 __BDT 4 `S1745 1 . 4 0 `S1750 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdFeatureReqHandler@p p `*.39S1754  1 a 2 24 ]
+"2778
+[v USBStdFeatureReqHandler@pUEP pUEP `*.39uc  1 a 2 21 ]
+[s S1806 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"2774
+[u S1809 . 1 `S1806 1 bits 1 0 `uc 1 Val 1 0 ]
+[v USBStdFeatureReqHandler@current_ep_data current_ep_data `S1809  1 a 1 23 ]
+"2997
+} 0
+"196 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/main.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+{
+[v USER_USB_CALLBACK_EVENT_HANDLER@event event `E4710  1 p 2 12 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.39v  1 p 2 14 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size size `ui  1 p 2 16 ]
+"259
+} 0
+"81 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/system_config/picdem_fs_usb/system.c
+[v i2_SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+{
+[v i2SYSTEM_Initialize@state state `E4693  1 a 1 wreg ]
+[v i2SYSTEM_Initialize@state state `E4693  1 a 1 wreg ]
+[v i2SYSTEM_Initialize@state state `E4693  1 a 1 1 ]
+"96
+} 0
+"257 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/leds.c
+[v i2_LED_Enable LED_Enable `(v  1 e 0 0 ]
+{
+[v i2LED_Enable@led led `E2  1 a 1 wreg ]
+[v i2LED_Enable@led led `E2  1 a 1 wreg ]
+[v i2LED_Enable@led led `E2  1 a 1 0 ]
+"280
+} 0
+"128 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/buttons.c
+[v i2_BUTTON_Enable BUTTON_Enable `(v  1 e 0 0 ]
+{
+[v i2BUTTON_Enable@button button `E4441  1 a 1 wreg ]
+[v i2BUTTON_Enable@button button `E4441  1 a 1 wreg ]
+[v i2BUTTON_Enable@button button `E4441  1 a 1 0 ]
+"143
+} 0
+"153 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 0 0 ]
+{
+"241
+} 0
+"273 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseIdleRateCallback APP_DeviceMouseIdleRateCallback `(v  1 e 0 0 ]
+{
+[v APP_DeviceMouseIdleRateCallback@reportId reportId `uc  1 a 1 wreg ]
+[v APP_DeviceMouseIdleRateCallback@reportId reportId `uc  1 a 1 wreg ]
+[v APP_DeviceMouseIdleRateCallback@idleRate idleRate `uc  1 p 1 0 ]
+"278
+[v APP_DeviceMouseIdleRateCallback@reportId reportId `uc  1 a 1 3 ]
+"282
+} 0
+"75 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_led_usb_status.c
+[v _APP_LEDUpdateUSBStatus APP_LEDUpdateUSBStatus `(v  1 e 0 0 ]
+{
+"77
+[v APP_LEDUpdateUSBStatus@ledCount ledCount `ui  1 s 2 ledCount ]
+"124
+} 0
+"96 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/bsp/picdem_fs_usb/leds.c
+[v _LED_On LED_On `(v  1 e 0 0 ]
+{
+[v LED_On@led led `E2  1 a 1 wreg ]
+[v LED_On@led led `E2  1 a 1 wreg ]
+[v LED_On@led led `E2  1 a 1 0 ]
+"119
+} 0
+"137
+[v _LED_Off LED_Off `(v  1 e 0 0 ]
+{
+[v LED_Off@led led `E2  1 a 1 wreg ]
+[v LED_Off@led led `E2  1 a 1 wreg ]
+[v LED_Off@led led `E2  1 a 1 0 ]
+"160
+} 0
+"296 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseSOFHandler APP_DeviceMouseSOFHandler `(v  1 e 0 0 ]
+{
+"414
+} 0
+"1013 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[s S1720 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1015
+[s S1729 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S1736 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S1740 _BD_STAT 1 `uc 1 Val 1 0 `S1720 1 . 1 0 `S1729 1 . 1 0 `S1736 1 . 1 0 ]
+[s S1745 . 4 `S1740 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S1750 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S1754 __BDT 4 `S1745 1 . 4 0 `S1750 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBTransferOnePacket@handle handle `*.39VES1754  1 a 2 5 ]
+"1013
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v USBTransferOnePacket@dir dir `uc  1 p 1 0 ]
+[v USBTransferOnePacket@data data `*.39uc  1 p 2 1 ]
+[v USBTransferOnePacket@len len `uc  1 p 1 3 ]
+"1018
+[v USBTransferOnePacket@ep ep `uc  1 a 1 4 ]
+"1065
+} 0
+"212 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/apps/usb/device/hid_mouse/firmware/src/app_device_mouse.c
+[v _APP_DeviceMouseInitialize APP_DeviceMouseInitialize `(v  1 e 0 0 ]
+{
+"230
+} 0
+"896 /Users/ShaunHoltzman/microchip/mla/v2015_08_10/framework/usb/src/usb_device.c
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 0 0 ]
+{
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+"898
+[v USBEnableEndpoint@p p `*.39uc  1 a 2 9 ]
+"896
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+[v USBEnableEndpoint@options options `uc  1 p 1 8 ]
+"902
+[v USBEnableEndpoint@ep ep `uc  1 a 1 11 ]
+"920
+} 0
+"1561
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 0 USBConfigureEndpoint ]
+{
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[s S1720 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1563
+[s S1729 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S1736 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S1740 _BD_STAT 1 `uc 1 Val 1 0 `S1720 1 . 1 0 `S1729 1 . 1 0 `S1736 1 . 1 0 ]
+[s S1745 . 4 `S1740 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S1750 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S1754 __BDT 4 `S1745 1 . 4 0 `S1750 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBConfigureEndpoint@handle handle `*.39VES1754  1 a 2 6 ]
+"1561
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[v USBConfigureEndpoint@direction direction `uc  1 p 1 0 ]
+"1567
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 5 ]
+"1603
+} 0
+"2555
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 0 USBCtrlTrfOutHandler ]
+{
+"2584
+} 0
+"1870
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
+{
+"1872
+[v USBCtrlTrfRxService@byteToRead byteToRead `uc  1 a 1 1 ]
+"1873
+[v USBCtrlTrfRxService@i i `uc  1 a 1 0 ]
+"1965
+} 0
+"1434
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 0 0 ]
+{
+"1477
+} 0
+"2609
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
+{
+"2611
+[v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 1 ]
+"2684
+} 0
+"1789
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
+{
+"1791
+[v USBCtrlTrfTxService@byteToSend byteToSend `uc  1 a 1 0 ]
+"1843
+} 0

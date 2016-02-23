@@ -1,0 +1,25 @@
+ build/PICDEM_FSUSB/production/_ext/1360937237/main.d  \
+ build/PICDEM_FSUSB/production/_ext/1360937237/main.p1:  \
+ ../src/main.c  \
+../../../../../../framework/usb/inc/usb_hal_pic18.h  \
+../../../../../../../../../Desktop/IMU/pconfig.h  \
+../../../../../../../../../Desktop/IMU/timers.h  \
+../../../../../../../../../Desktop/IMU/MPU6050.h  \
+../src/app_device_mouse.h  \
+../../../../../../framework/usb/inc/usb_common.h  \
+../src/system_config/picdem_fs_usb/io_mapping.h  \
+../../../../../../framework/usb/inc/usb_device_hid.h  \
+../../../../../../../../../Desktop/IMU/delays.h  \
+../src/usb_config.h  \
+../../../../../../bsp/picdem_fs_usb/power.h  \
+../../../../../../framework/usb/inc/usb_ch9.h  \
+../../../../../../bsp/picdem_fs_usb/leds.h  \
+../src/system_config.h  \
+../src/system_config/picdem_fs_usb/system.h  \
+../../../../../../framework/usb/inc/usb_device.h  \
+../../../../../../framework/usb/inc/usb.h  \
+../../../../../../../../../Desktop/IMU/i2c.h  \
+../../../../../../bsp/picdem_fs_usb/buttons.h  \
+../../../../../../framework/usb/inc/usb_hal.h  \
+../src/app_led_usb_status.h  \
+../src/system_config/picdem_fs_usb/fixed_address_memory.h 
