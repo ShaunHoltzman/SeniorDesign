@@ -55,18 +55,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S30 . . ]
 "649
 [v _UCONbits `VS30 ~T0 @X0 0 e@3949 ]
-[v F4433 `(v ~T0 @X0 1 tf1`ul ]
-"152 /Applications/microchip/xc8/v1.35/include/pic18.h
-[v __delay `JF4433 ~T0 @X0 0 e ]
-[p i __delay ]
-"53 ../src/main.c
-[v _LCDstring `(v ~T0 @X0 0 ef1`*uc ]
-"54
-[v _LCDdouble `(v ~T0 @X0 0 ef1`d ]
-"51
-[v _LCDdata `(v ~T0 @X0 0 ef1`uc ]
 "75 ../src/app_device_mouse.h
-[v _APP_DeviceMouseTasks `(v ~T0 @X0 0 ef3`i`i`i ]
+[v _APP_DeviceMouseTasks `(v ~T0 @X0 0 ef ]
 "197 ../src/main.c
 [c E4710 0 1 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 400 500 600 700 800 900 1000 10000 32767 .. ]
 [n E4710 . EVENT_NONE EVENT_DEVICE_STACK_BASE EVENT_HOST_STACK_BASE EVENT_HUB_ATTACH EVENT_STALL EVENT_VBUS_SES_REQUEST EVENT_VBUS_OVERCURRENT EVENT_VBUS_REQUEST_POWER EVENT_VBUS_RELEASE_POWER EVENT_VBUS_POWER_AVAILABLE EVENT_UNSUPPORTED_DEVICE EVENT_CANNOT_ENUMERATE EVENT_CLIENT_INIT_ERROR EVENT_OUT_OF_MEMORY EVENT_UNSPECIFIED_ERROR EVENT_DETACH EVENT_TRANSFER EVENT_SOF EVENT_RESUME EVENT_SUSPEND EVENT_RESET EVENT_DATA_ISOC_READ EVENT_DATA_ISOC_WRITE EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION EVENT_1MS EVENT_ALT_INTERFACE EVENT_HOLD_BEFORE_CONFIGURATION EVENT_GENERIC_BASE EVENT_MSD_BASE EVENT_HID_BASE EVENT_PRINTER_BASE EVENT_CDC_BASE EVENT_CHARGER_BASE EVENT_AUDIO_BASE EVENT_USER_BASE EVENT_BUS_ERROR  ]
@@ -115,6 +105,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S271 . . . . . . . . . . ]
 "3790
 [v _LATDbits `VS271 ~T0 @X0 0 e@3980 ]
+[v F4433 `(v ~T0 @X0 1 tf1`ul ]
+"152 /Applications/microchip/xc8/v1.35/include/pic18.h
+[v __delay `JF4433 ~T0 @X0 0 e ]
+[p i __delay ]
 "49 ../src/main.c
 [v _LCDnibble `(v ~T0 @X0 0 ef1`uc ]
 "3742 /Applications/microchip/xc8/v1.35/include/pic18f4550.h
@@ -4872,7 +4866,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stddef.h: 6: typedef int ptrdiff_t;
 [; ;app_device_mouse.h: 43: void APP_DeviceMouseInitialize();
 [; ;app_device_mouse.h: 59: void APP_DeviceMouseStart();
-[; ;app_device_mouse.h: 75: void APP_DeviceMouseTasks(signed int accx, signed int accy, signed int accz);
+[; ;app_device_mouse.h: 75: void APP_DeviceMouseTasks();
 [; ;app_device_mouse.h: 77: bool APP_DeviceMouseEventHandler(unsigned int event, void *pdata, size_t size);
 [; ;app_device_mouse.h: 78: void APP_DeviceMouseSOFHandler(void);
 [; ;app_led_usb_status.h: 40: void APP_LEDUpdateUSBStatus(void);
@@ -6089,63 +6083,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 751 ]
 [; ;main.c: 141: }
-[; ;main.c: 150: LCDcmd(0x01);
-"150
-[e ( _LCDcmd (1 -> -> 1 `i `uc ]
-[; ;main.c: 151: accx = MPU6050_ReadAccX();
-"151
-[e = _accx ( _MPU6050_ReadAccX ..  ]
-[; ;main.c: 152: _delay(1);
-"152
-[e ( __delay (1 -> -> -> 1 `i `l `ul ]
-[; ;main.c: 153: gforcex = (double)accx * gforcescale;
-"153
-[e = _gforcex * -> _accx `d _gforcescale ]
-[; ;main.c: 154: LCDstring(&ax);
-"154
-[e ( _LCDstring (1 &U _ax ]
-[; ;main.c: 155: LCDdouble((double)accx);
-"155
-[e ( _LCDdouble (1 -> _accx `d ]
-[; ;main.c: 156: LCDdata(' ');
-"156
-[e ( _LCDdata (1 -> -> 32 `ui `uc ]
-[; ;main.c: 157: accy = MPU6050_ReadAccY();
-"157
-[e = _accy ( _MPU6050_ReadAccY ..  ]
-[; ;main.c: 158: _delay(1);
-"158
-[e ( __delay (1 -> -> -> 1 `i `l `ul ]
-[; ;main.c: 159: gforcey = (double)accy * gforcescale;
-"159
-[e = _gforcey * -> _accy `d _gforcescale ]
-[; ;main.c: 160: LCDstring(&ay);
-"160
-[e ( _LCDstring (1 &U _ay ]
-[; ;main.c: 161: LCDdouble((double)accy);
-"161
-[e ( _LCDdouble (1 -> _accy `d ]
-[; ;main.c: 162: LCDcmd(0xC0);
-"162
-[e ( _LCDcmd (1 -> -> 192 `i `uc ]
-[; ;main.c: 163: accz = MPU6050_ReadAccZ();
-"163
-[e = _accz ( _MPU6050_ReadAccZ ..  ]
-[; ;main.c: 164: _delay(1);
-"164
-[e ( __delay (1 -> -> -> 1 `i `l `ul ]
-[; ;main.c: 165: gforcez = (double)accz * gforcescale;
-"165
-[e = _gforcez * -> _accz `d _gforcescale ]
-[; ;main.c: 166: LCDstring(&az);
-"166
-[e ( _LCDstring (1 &U _az ]
-[; ;main.c: 167: LCDdouble((double)accz);
-"167
-[e ( _LCDdouble (1 -> _accz `d ]
-[; ;main.c: 169: APP_DeviceMouseTasks(accx, accy, accz);
+[; ;main.c: 169: APP_DeviceMouseTasks();
 "169
-[e ( _APP_DeviceMouseTasks (3 , , _accx _accy _accz ]
+[e ( _APP_DeviceMouseTasks ..  ]
 "171
 }
 [e :U 747 ]

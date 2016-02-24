@@ -6483,17 +6483,152 @@ void APP_DeviceMouseInitialize();
 void APP_DeviceMouseStart();
 
 # 75
-void APP_DeviceMouseTasks(signed int accx, signed int accy, signed int accz);
+void APP_DeviceMouseTasks();
 
 bool APP_DeviceMouseEventHandler(unsigned int event, void *pdata, size_t size);
 void APP_DeviceMouseSOFHandler(void);
 
-# 39 "../src/app_device_mouse.c"
-unsigned int acx;
-unsigned int acy;
-unsigned int acz;
+# 33 "../../../../../../../../../Desktop/IMU/delays.h"
+void Delay10TCYx(unsigned char);
 
-# 50
+# 40
+void Delay100TCYx(unsigned char);
+
+# 47
+void Delay1KTCYx(unsigned char);
+
+# 54
+void Delay10KTCYx(unsigned char);
+
+# 30 "/Applications/microchip/xc8/v1.35/include/math.h"
+extern double fabs(double);
+extern double floor(double);
+extern double ceil(double);
+extern double modf(double, double *);
+extern double sqrt(double);
+extern double atof(const char *);
+extern double sin(double) ;
+extern double cos(double) ;
+extern double tan(double) ;
+extern double asin(double) ;
+extern double acos(double) ;
+extern double atan(double);
+extern double atan2(double, double) ;
+extern double log(double);
+extern double log10(double);
+extern double pow(double, double) ;
+extern double exp(double) ;
+extern double sinh(double) ;
+extern double cosh(double) ;
+extern double tanh(double);
+extern double eval_poly(double, const double *, int);
+extern double frexp(double, int *);
+extern double ldexp(double, int);
+extern double fmod(double, double);
+extern double trunc(double);
+extern double round(double);
+
+# 36 "../../../../../../../../../Desktop/IMU/timers.h"
+union Timers
+{
+unsigned int lt;
+char bt[2];
+};
+
+# 118
+void OpenTimer0 ( unsigned char config);
+void CloseTimer0 (void);
+unsigned int ReadTimer0 (void);
+void WriteTimer0 ( unsigned int timer0);
+
+# 236
+void OpenTimer1 ( unsigned char config);
+void CloseTimer1 (void);
+unsigned int ReadTimer1 (void);
+void WriteTimer1 ( unsigned int timer1);
+
+# 325
+void OpenTimer2 ( unsigned char config);
+void CloseTimer2 (void);
+
+# 391
+void OpenTimer3 ( unsigned char config);
+void CloseTimer3 (void);
+unsigned int ReadTimer3 (void);
+void WriteTimer3 ( unsigned int timer3);
+
+# 1179
+void SetTmrCCPSrc( unsigned char );
+
+# 7 "/Applications/microchip/xc8/v1.35/include/stdarg.h"
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+
+# 43 "/Applications/microchip/xc8/v1.35/include/stdio.h"
+struct __prbuf
+{
+char * ptr;
+void (* func)(char);
+};
+
+# 25 "/Applications/microchip/xc8/v1.35/include/errno.h"
+extern int errno;
+
+# 12 "/Applications/microchip/xc8/v1.35/include/conio.h"
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+# 23
+extern char * cgets(char *);
+extern void cputs(const char *);
+
+# 88 "/Applications/microchip/xc8/v1.35/include/stdio.h"
+extern int cprintf(char *, ...);
+#pragma printf_check(cprintf)
+
+
+
+extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+
+
+# 180
+#pragma printf_check(vprintf) const
+#pragma printf_check(vsprintf) const
+
+extern char * gets(char *);
+extern int puts(const char *);
+extern int scanf(const char *, ...) ;
+extern int sscanf(const char *, const char *, ...) ;
+extern int vprintf(const char *, va_list) ;
+extern int vsprintf(char *, const char *, va_list) ;
+extern int vscanf(const char *, va_list ap) ;
+extern int vsscanf(const char *, const char *, va_list) ;
+
+#pragma printf_check(printf) const
+#pragma printf_check(sprintf) const
+extern int sprintf(char *, const char *, ...);
+extern int printf(const char *, ...);
+
+# 47 "../src/app_device_mouse.c"
+signed int acx;
+signed int acy;
+signed int acz;
+int oldacx;
+int oldacy;
+int oldacz;
+
+# 61
 const struct{uint8_t report[50];}hid_rpt01=
 {
 {
@@ -6525,11 +6660,11 @@ const struct{uint8_t report[50];}hid_rpt01=
 }
 };
 
-# 91
+# 102
 typedef struct 
 {
 
-# 116
+# 127
 union 
 {
 struct 
@@ -6549,15 +6684,15 @@ unsigned :5;
 uint8_t value;
 } buttons;
 
-# 154
+# 165
 uint8_t x;
 uint8_t y;
 } MOUSE_REPORT;
 
-# 170
+# 181
 static MOUSE_REPORT mouseReport @ 0x500;
 
-# 178
+# 189
 static const uint8_t xVector[]={ -1, 0, 1, 0};
 static const uint8_t yVector[]={ 0, -1, 0, 1};
 
@@ -6580,11 +6715,11 @@ uint8_t idleRateSofCount;
 
 static MOUSE mouse;
 
-# 212
+# 223
 void APP_DeviceMouseInitialize(void)
 {
 
-# 219
+# 230
 mouse.movementMode = 1;
 
 
@@ -6598,18 +6733,16 @@ mouse.movementCount = 0;
 USBEnableEndpoint(1,0x02|0x10|0x08);
 }
 
-# 246
-void APP_DeviceMouseTasks(signed int accx, signed int accy, signed int accz)
+# 257
+void APP_DeviceMouseTasks()
 {
 bool currentButtonState;
 
-acx = accx;
-acy = accy;
-acz = accz;
+
 
 currentButtonState = BUTTON_IsPressed(BUTTON_S2);
 
-# 259
+# 268
 if(mouse.lastButtonState != currentButtonState)
 {
 mouse.lastButtonState = currentButtonState;
@@ -6635,24 +6768,24 @@ mouse.inputReport[reportId].idleRate = idleRate;
 }
 }
 
-# 296
+# 305
 void APP_DeviceMouseSOFHandler(void)
 {
 
-# 303
+# 312
 if(USBDeviceState != CONFIGURED_STATE)
 {
 return;
 }
 
-# 331
+# 340
 if(((mouse.inputReport[0].handle != 0x0000) && ((*(volatile uint8_t*)mouse.inputReport[0].handle & 0x80) != 0x00)) == 0)
 {
 
-# 338
+# 347
 mouse.movementCount++;
 
-# 343
+# 352
 if(mouse.movementCount == 1)
 {
 mouse.movementCount = 0;
@@ -6664,41 +6797,55 @@ mouse.vectorPosition = 0;
 }
 }
 
-# 359
+# 368
 if(mouse.movementMode == 1)
 {
 mouseReport.buttons.button1 = 0;
 mouseReport.buttons.button2 = 0;
 mouseReport.buttons.button3 = 0;
+mouseReport.x = 0;
+mouseReport.y = 0;
 
-if(PORTBbits.RB2 == 1)
+oldacx = acx;
+
+acx = MPU6050_ReadAccX();
+
+if(acx >= 6000)
 {
 
-mouseReport.x = 0;
+
 mouseReport.y = -1;
 }
-else
-{
-mouseReport.x = 0;
-mouseReport.y = 0;
-}
-}
-else
-{
-mouseReport.buttons.value = 0;
-mouseReport.x = 0;
-mouseReport.y = 0;
 
+if(acx <=-6000){
+mouseReport.y = 1;
+}
+
+oldacy = acy;
+acy = MPU6050_ReadAccY();
+if(acy <=-6000){
+mouseReport.x = -1;
+}
+
+if(acy >=6000){
+mouseReport.x = 1;
+}
+
+if(PORTBbits.RB2 == 1){
+mouseReport.buttons.button1 = 1;
+}
+
+# 413
 if(mouse.inputReport[0].idleRate != 0)
 {
 mouse.inputReport[0].idleRateSofCount++;
 }
 
-# 393
+# 423
 if(mouse.sentStop == 1)
 {
 
-# 400
+# 430
 if(mouse.inputReport[0].idleRateSofCount <= mouse.inputReport[0].idleRate)
 {
 return;
@@ -6708,7 +6855,7 @@ return;
 
 mouse.inputReport[0].handle = USBTransferOnePacket(1,1,(uint8_t*)&mouseReport,sizeof(mouseReport));
 
-# 412
+# 442
 }
 
 }

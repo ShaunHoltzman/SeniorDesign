@@ -6411,7 +6411,7 @@ void APP_DeviceMouseInitialize();
 void APP_DeviceMouseStart();
 
 # 75
-void APP_DeviceMouseTasks(signed int accx, signed int accy, signed int accz);
+void APP_DeviceMouseTasks();
 
 bool APP_DeviceMouseEventHandler(unsigned int event, void *pdata, size_t size);
 void APP_DeviceMouseSOFHandler(void);
@@ -6992,27 +6992,8 @@ if( UCONbits.SUSPND == 1 )
 continue;
 }
 
-# 150
-LCDcmd(0x01);
-accx = MPU6050_ReadAccX();
-_delay(1);
-gforcex = (double)accx * gforcescale;
-LCDstring(&ax);
-LCDdouble((double)accx);
-LCDdata(' ');
-accy = MPU6050_ReadAccY();
-_delay(1);
-gforcey = (double)accy * gforcescale;
-LCDstring(&ay);
-LCDdouble((double)accy);
-LCDcmd(0xC0);
-accz = MPU6050_ReadAccZ();
-_delay(1);
-gforcez = (double)accz * gforcescale;
-LCDstring(&az);
-LCDdouble((double)accz);
-
-APP_DeviceMouseTasks(accx, accy, accz);
+# 169
+APP_DeviceMouseTasks();
 
 }
 }

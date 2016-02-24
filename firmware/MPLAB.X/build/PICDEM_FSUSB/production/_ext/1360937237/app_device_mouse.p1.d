@@ -2,10 +2,13 @@
  build/PICDEM_FSUSB/production/_ext/1360937237/app_device_mouse.p1:  \
  ../src/app_device_mouse.c  \
 ../../../../../../framework/usb/inc/usb_hal_pic18.h  \
+../../../../../../../../../Desktop/IMU/pconfig.h  \
+../../../../../../../../../Desktop/IMU/timers.h  \
 ../src/app_device_mouse.h  \
 ../../../../../../framework/usb/inc/usb_common.h  \
 ../src/system_config/picdem_fs_usb/io_mapping.h  \
 ../../../../../../framework/usb/inc/usb_device_hid.h  \
+../../../../../../../../../Desktop/IMU/delays.h  \
 ../src/usb_config.h  \
 ../../../../../../bsp/picdem_fs_usb/power.h  \
 ../../../../../../framework/usb/inc/usb_ch9.h  \

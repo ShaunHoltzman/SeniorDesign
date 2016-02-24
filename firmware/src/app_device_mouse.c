@@ -34,11 +34,22 @@
 #include "app_device_mouse.h"
 #include "usb_config.h"
 
+#include  "delays.h"
+#include <string.h>
+#include <math.h>
+#include "timers.h"
+
+#include <stdio.h>
+
+
 #define BUTTON1 PORTBbits.RB2
 
-unsigned int acx;
-unsigned int acy;
-unsigned int acz;
+signed int acx;
+signed int acy;
+signed int acz;
+int oldacx;
+int oldacy;
+int oldacz;
 
 /*******************************************************************************
  * HID Report Descriptor - this describes the data format of the reports that
@@ -243,13 +254,11 @@ void APP_DeviceMouseInitialize(void)
 * Output: None
 *
 ********************************************************************/
-void APP_DeviceMouseTasks(signed int accx, signed int accy, signed int accz)
+void APP_DeviceMouseTasks()
 {
     bool currentButtonState;
 
-    acx = accx;
-    acy = accy;
-    acz = accz;
+    
     /* Get the current button state */
     currentButtonState = BUTTON_IsPressed(BUTTON_USB_DEVICE_HID_MOUSE);
 
@@ -361,24 +370,45 @@ void APP_DeviceMouseSOFHandler(void)
             mouseReport.buttons.button1 = 0;
             mouseReport.buttons.button2 = 0;
             mouseReport.buttons.button3 = 0;
-            
-            if(BUTTON1 == 1) 
-            {
-                //mouseReport.buttons.button2 = 1;
-                mouseReport.x = 0;
-                mouseReport.y = -1;
-            }
-            else
-            {
-                mouseReport.x = 0;
-                mouseReport.y = 0;
-            }
-        }
-        else
-        {
-            mouseReport.buttons.value = 0;
             mouseReport.x = 0;
             mouseReport.y = 0;
+            
+            oldacx = acx;
+            
+            acx = MPU6050_ReadAccX();
+           
+            if(acx >= 6000) 
+            {
+                
+                
+                mouseReport.y = -1;
+            }
+            
+            if(acx <=-6000){
+                mouseReport.y = 1;
+            }
+            
+            oldacy = acy;
+            acy = MPU6050_ReadAccY();
+           if(acy <=-6000){
+                mouseReport.x = -1;
+            }
+            
+            if(acy >=6000){
+                mouseReport.x = 1;
+            }
+        
+            if(BUTTON1 == 1){
+                mouseReport.buttons.button1 = 1;
+            }
+        
+        
+        
+//        else
+//        {
+//            mouseReport.buttons.value = 0;
+//            mouseReport.x = 0;
+//            mouseReport.y = 0;
 
             if(mouse.inputReport[0].idleRate != 0)
             {

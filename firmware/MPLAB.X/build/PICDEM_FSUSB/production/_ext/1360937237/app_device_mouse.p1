@@ -1,37 +1,41 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"50 ../src/app_device_mouse.c
-[s S616 `uc -> 50 `i ]
-[n S616 . report ]
-"119
-[s S619 :1 `uc 1 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
-[n S619 . button1 button2 button3 . ]
-"126
-[s S620 :1 `uc 1 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
-[n S620 . primary secondary tertiary . ]
-"117
-[u S618 `S619 1 `S620 1 `uc 1 ]
-[n S618 . . . value ]
-"92
-[s S617 `S618 1 `uc 1 `uc 1 ]
-[n S617 . buttons x y ]
-"190
-[s S622 `*v 1 `uc 1 `uc 1 ]
-[n S622 . handle idleRate idleRateSofCount ]
-"182
-[s S621 `uc 1 `uc 1 `uc 1 `ui 1 `uc 1 `S622 -> -> 1 `i `ux ]
-[n S621 . sentStop lastButtonState vectorPosition movementCount movementMode inputReport ]
+"61 ../src/app_device_mouse.c
+[s S618 `uc -> 50 `i ]
+[n S618 . report ]
+"130
+[s S621 :1 `uc 1 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
+[n S621 . button1 button2 button3 . ]
+"137
+[s S622 :1 `uc 1 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
+[n S622 . primary secondary tertiary . ]
+"128
+[u S620 `S621 1 `S622 1 `uc 1 ]
+[n S620 . . . value ]
+"103
+[s S619 `S620 1 `uc 1 `uc 1 ]
+[n S619 . buttons x y ]
+"201
+[s S624 `*v 1 `uc 1 `uc 1 ]
+[n S624 . handle idleRate idleRateSofCount ]
+"193
+[s S623 `uc 1 `uc 1 `uc 1 `ui 1 `uc 1 `S624 -> -> 1 `i `ux ]
+[n S623 . sentStop lastButtonState vectorPosition movementCount movementMode inputReport ]
 "350 ../../../../../../framework/usb/inc/usb_device.h
 [v _USBEnableEndpoint `(v ~T0 @X0 0 ef2`uc`uc ]
-"254 ../src/app_device_mouse.c
+"263 ../src/app_device_mouse.c
 [c E4441 0 1 2 .. ]
 [n E4441 . BUTTON_NONE BUTTON_S2 BUTTON_S3  ]
 "54 ../../../../../../bsp/picdem_fs_usb/buttons.h
 [v _BUTTON_IsPressed `(uc ~T0 @X0 0 ef1`E4441 ]
-"303 ../src/app_device_mouse.c
+"312 ../src/app_device_mouse.c
 [c E4889 0 1 2 4 8 16 32 .. ]
 [n E4889 . DETACHED_STATE ATTACHED_STATE POWERED_STATE DEFAULT_STATE ADR_PENDING_STATE ADDRESS_STATE CONFIGURED_STATE  ]
 "2053 ../../../../../../framework/usb/inc/usb_device.h
 [v _USBDeviceState `VE4889 ~T0 @X0 0 e ]
+"378 ../src/app_device_mouse.c
+[v _MPU6050_ReadAccX `(i ~T0 @X0 0 ef ]
+"392
+[v _MPU6050_ReadAccY `(i ~T0 @X0 0 ef ]
 "2733 /Applications/microchip/xc8/v1.35/include/pic18f4550.h
 [s S201 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S201 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
@@ -4850,161 +4854,249 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stddef.h: 6: typedef int ptrdiff_t;
 [; ;app_device_mouse.h: 43: void APP_DeviceMouseInitialize();
 [; ;app_device_mouse.h: 59: void APP_DeviceMouseStart();
-[; ;app_device_mouse.h: 75: void APP_DeviceMouseTasks(signed int accx, signed int accy, signed int accz);
+[; ;app_device_mouse.h: 75: void APP_DeviceMouseTasks();
 [; ;app_device_mouse.h: 77: bool APP_DeviceMouseEventHandler(unsigned int event, void *pdata, size_t size);
 [; ;app_device_mouse.h: 78: void APP_DeviceMouseSOFHandler(void);
-"39 ../src/app_device_mouse.c
-[v _acx `ui ~T0 @X0 1 e ]
-[; ;app_device_mouse.c: 39: unsigned int acx;
-"40
-[v _acy `ui ~T0 @X0 1 e ]
-[; ;app_device_mouse.c: 40: unsigned int acy;
-"41
-[v _acz `ui ~T0 @X0 1 e ]
-[; ;app_device_mouse.c: 41: unsigned int acz;
+[; ;delays.h: 33: void Delay10TCYx(unsigned char);
+[; ;delays.h: 40: void Delay100TCYx(unsigned char);
+[; ;delays.h: 47: void Delay1KTCYx(unsigned char);
+[; ;delays.h: 54: void Delay10KTCYx(unsigned char);
+[; ;math.h: 30: extern double fabs(double);
+[; ;math.h: 31: extern double floor(double);
+[; ;math.h: 32: extern double ceil(double);
+[; ;math.h: 33: extern double modf(double, double *);
+[; ;math.h: 34: extern double sqrt(double);
+[; ;math.h: 35: extern double atof(const char *);
+[; ;math.h: 36: extern double sin(double) ;
+[; ;math.h: 37: extern double cos(double) ;
+[; ;math.h: 38: extern double tan(double) ;
+[; ;math.h: 39: extern double asin(double) ;
+[; ;math.h: 40: extern double acos(double) ;
+[; ;math.h: 41: extern double atan(double);
+[; ;math.h: 42: extern double atan2(double, double) ;
+[; ;math.h: 43: extern double log(double);
+[; ;math.h: 44: extern double log10(double);
+[; ;math.h: 45: extern double pow(double, double) ;
+[; ;math.h: 46: extern double exp(double) ;
+[; ;math.h: 47: extern double sinh(double) ;
+[; ;math.h: 48: extern double cosh(double) ;
+[; ;math.h: 49: extern double tanh(double);
+[; ;math.h: 50: extern double eval_poly(double, const double *, int);
+[; ;math.h: 51: extern double frexp(double, int *);
+[; ;math.h: 52: extern double ldexp(double, int);
+[; ;math.h: 53: extern double fmod(double, double);
+[; ;math.h: 54: extern double trunc(double);
+[; ;math.h: 55: extern double round(double);
+[; ;timers.h: 36: union Timers
+[; ;timers.h: 37: {
+[; ;timers.h: 38: unsigned int lt;
+[; ;timers.h: 39: char bt[2];
+[; ;timers.h: 40: };
+[; ;timers.h: 118: void OpenTimer0 ( unsigned char config);
+[; ;timers.h: 119: void CloseTimer0 (void);
+[; ;timers.h: 120: unsigned int ReadTimer0 (void);
+[; ;timers.h: 121: void WriteTimer0 ( unsigned int timer0);
+[; ;timers.h: 236: void OpenTimer1 ( unsigned char config);
+[; ;timers.h: 237: void CloseTimer1 (void);
+[; ;timers.h: 238: unsigned int ReadTimer1 (void);
+[; ;timers.h: 239: void WriteTimer1 ( unsigned int timer1);
+[; ;timers.h: 325: void OpenTimer2 ( unsigned char config);
+[; ;timers.h: 326: void CloseTimer2 (void);
+[; ;timers.h: 391: void OpenTimer3 ( unsigned char config);
+[; ;timers.h: 392: void CloseTimer3 (void);
+[; ;timers.h: 393: unsigned int ReadTimer3 (void);
+[; ;timers.h: 394: void WriteTimer3 ( unsigned int timer3);
+[; ;timers.h: 1179: void SetTmrCCPSrc( unsigned char );
+[; ;stdarg.h: 7: typedef void * va_list[1];
+[; ;stdarg.h: 10: extern void * __va_start(void);
+[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
+[; ;stdio.h: 43: struct __prbuf
+[; ;stdio.h: 44: {
+[; ;stdio.h: 45: char * ptr;
+[; ;stdio.h: 46: void (* func)(char);
+[; ;stdio.h: 47: };
+[; ;errno.h: 25: extern int errno;
+[; ;conio.h: 12: extern void init_uart(void);
+[; ;conio.h: 14: extern char getch(void);
+[; ;conio.h: 15: extern char getche(void);
+[; ;conio.h: 16: extern void putch(char);
+[; ;conio.h: 17: extern void ungetch(char);
+[; ;conio.h: 19: extern __bit kbhit(void);
+[; ;conio.h: 23: extern char * cgets(char *);
+[; ;conio.h: 24: extern void cputs(const char *);
+[; ;stdio.h: 88: extern int cprintf(char *, ...);
+[; ;stdio.h: 93: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+[; ;stdio.h: 183: extern char * gets(char *);
+[; ;stdio.h: 184: extern int puts(const char *);
+[; ;stdio.h: 185: extern int scanf(const char *, ...) ;
+[; ;stdio.h: 186: extern int sscanf(const char *, const char *, ...) ;
+[; ;stdio.h: 187: extern int vprintf(const char *, va_list) ;
+[; ;stdio.h: 188: extern int vsprintf(char *, const char *, va_list) ;
+[; ;stdio.h: 189: extern int vscanf(const char *, va_list ap) ;
+[; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) ;
+[; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
+[; ;stdio.h: 195: extern int printf(const char *, ...);
+"47 ../src/app_device_mouse.c
+[v _acx `i ~T0 @X0 1 e ]
+[; ;app_device_mouse.c: 47: signed int acx;
+"48
+[v _acy `i ~T0 @X0 1 e ]
+[; ;app_device_mouse.c: 48: signed int acy;
+"49
+[v _acz `i ~T0 @X0 1 e ]
+[; ;app_device_mouse.c: 49: signed int acz;
 "50
-[v _hid_rpt01 `CS616 ~T0 @X0 1 e ]
+[v _oldacx `i ~T0 @X0 1 e ]
+[; ;app_device_mouse.c: 50: int oldacx;
+"51
+[v _oldacy `i ~T0 @X0 1 e ]
+[; ;app_device_mouse.c: 51: int oldacy;
+"52
+[v _oldacz `i ~T0 @X0 1 e ]
+[; ;app_device_mouse.c: 52: int oldacz;
+"61
+[v _hid_rpt01 `CS618 ~T0 @X0 1 e ]
 [i _hid_rpt01
 :U ..
 :U ..
 :U ..
-"53
--> -> 5 `i `uc
--> -> 1 `i `uc
-"54
--> -> 9 `i `uc
--> -> 2 `i `uc
-"55
--> -> 161 `i `uc
--> -> 1 `i `uc
-"56
--> -> 9 `i `uc
--> -> 1 `i `uc
-"57
--> -> 161 `i `uc
--> -> 0 `i `uc
-"58
--> -> 5 `i `uc
--> -> 9 `i `uc
-"59
--> -> 25 `i `uc
--> -> 1 `i `uc
-"60
--> -> 41 `i `uc
--> -> 3 `i `uc
-"61
--> -> 21 `i `uc
--> -> 0 `i `uc
-"62
--> -> 37 `i `uc
--> -> 1 `i `uc
-"63
--> -> 149 `i `uc
--> -> 3 `i `uc
 "64
--> -> 117 `i `uc
+-> -> 5 `i `uc
 -> -> 1 `i `uc
 "65
--> -> 129 `i `uc
+-> -> 9 `i `uc
 -> -> 2 `i `uc
 "66
--> -> 149 `i `uc
+-> -> 161 `i `uc
 -> -> 1 `i `uc
 "67
--> -> 117 `i `uc
--> -> 5 `i `uc
-"68
--> -> 129 `i `uc
+-> -> 9 `i `uc
 -> -> 1 `i `uc
+"68
+-> -> 161 `i `uc
+-> -> 0 `i `uc
 "69
 -> -> 5 `i `uc
--> -> 1 `i `uc
+-> -> 9 `i `uc
 "70
--> -> 9 `i `uc
--> -> 48 `i `uc
+-> -> 25 `i `uc
+-> -> 1 `i `uc
 "71
--> -> 9 `i `uc
--> -> 49 `i `uc
+-> -> 41 `i `uc
+-> -> 3 `i `uc
 "72
 -> -> 21 `i `uc
--> -> 129 `i `uc
+-> -> 0 `i `uc
 "73
 -> -> 37 `i `uc
--> -> 127 `i `uc
+-> -> 1 `i `uc
 "74
--> -> 117 `i `uc
--> -> 8 `i `uc
-"75
 -> -> 149 `i `uc
--> -> 2 `i `uc
+-> -> 3 `i `uc
+"75
+-> -> 117 `i `uc
+-> -> 1 `i `uc
 "76
 -> -> 129 `i `uc
--> -> 6 `i `uc
+-> -> 2 `i `uc
 "77
--> -> 192 `i `uc
+-> -> 149 `i `uc
+-> -> 1 `i `uc
 "78
+-> -> 117 `i `uc
+-> -> 5 `i `uc
+"79
+-> -> 129 `i `uc
+-> -> 1 `i `uc
+"80
+-> -> 5 `i `uc
+-> -> 1 `i `uc
+"81
+-> -> 9 `i `uc
+-> -> 48 `i `uc
+"82
+-> -> 9 `i `uc
+-> -> 49 `i `uc
+"83
+-> -> 21 `i `uc
+-> -> 129 `i `uc
+"84
+-> -> 37 `i `uc
+-> -> 127 `i `uc
+"85
+-> -> 117 `i `uc
+-> -> 8 `i `uc
+"86
+-> -> 149 `i `uc
+-> -> 2 `i `uc
+"87
+-> -> 129 `i `uc
+-> -> 6 `i `uc
+"88
+-> -> 192 `i `uc
+"89
 -> -> 192 `i `uc
 ..
 ..
 ..
 ]
-[; ;app_device_mouse.c: 50: const struct{uint8_t report[50];}hid_rpt01=
-[; ;app_device_mouse.c: 51: {
-[; ;app_device_mouse.c: 52: {
-[; ;app_device_mouse.c: 53: 0x05, 0x01,
-[; ;app_device_mouse.c: 54: 0x09, 0x02,
-[; ;app_device_mouse.c: 55: 0xA1, 0x01,
-[; ;app_device_mouse.c: 56: 0x09, 0x01,
-[; ;app_device_mouse.c: 57: 0xA1, 0x00,
-[; ;app_device_mouse.c: 58: 0x05, 0x09,
-[; ;app_device_mouse.c: 59: 0x19, 0x01,
-[; ;app_device_mouse.c: 60: 0x29, 0x03,
-[; ;app_device_mouse.c: 61: 0x15, 0x00,
-[; ;app_device_mouse.c: 62: 0x25, 0x01,
-[; ;app_device_mouse.c: 63: 0x95, 0x03,
-[; ;app_device_mouse.c: 64: 0x75, 0x01,
-[; ;app_device_mouse.c: 65: 0x81, 0x02,
-[; ;app_device_mouse.c: 66: 0x95, 0x01,
-[; ;app_device_mouse.c: 67: 0x75, 0x05,
-[; ;app_device_mouse.c: 68: 0x81, 0x01,
-[; ;app_device_mouse.c: 69: 0x05, 0x01,
-[; ;app_device_mouse.c: 70: 0x09, 0x30,
-[; ;app_device_mouse.c: 71: 0x09, 0x31,
-[; ;app_device_mouse.c: 72: 0x15, 0x81,
-[; ;app_device_mouse.c: 73: 0x25, 0x7F,
-[; ;app_device_mouse.c: 74: 0x75, 0x08,
-[; ;app_device_mouse.c: 75: 0x95, 0x02,
-[; ;app_device_mouse.c: 76: 0x81, 0x06,
-[; ;app_device_mouse.c: 77: 0xC0, 0xC0
-[; ;app_device_mouse.c: 78: }
-[; ;app_device_mouse.c: 79: };
-[; ;app_device_mouse.c: 91: typedef struct 
-[; ;app_device_mouse.c: 92: {
-[; ;app_device_mouse.c: 116: union 
-[; ;app_device_mouse.c: 117: {
-[; ;app_device_mouse.c: 118: struct 
-[; ;app_device_mouse.c: 119: {
-[; ;app_device_mouse.c: 120: unsigned button1 :1;
-[; ;app_device_mouse.c: 121: unsigned button2 :1;
-[; ;app_device_mouse.c: 122: unsigned button3 :1;
-[; ;app_device_mouse.c: 123: unsigned :5;
-[; ;app_device_mouse.c: 124: };
-[; ;app_device_mouse.c: 125: struct 
-[; ;app_device_mouse.c: 126: {
-[; ;app_device_mouse.c: 127: unsigned primary :1;
-[; ;app_device_mouse.c: 128: unsigned secondary :1;
-[; ;app_device_mouse.c: 129: unsigned tertiary :1;
-[; ;app_device_mouse.c: 130: unsigned :5;
-[; ;app_device_mouse.c: 131: };
-[; ;app_device_mouse.c: 132: uint8_t value;
-[; ;app_device_mouse.c: 133: } buttons;
-[; ;app_device_mouse.c: 154: uint8_t x;
-[; ;app_device_mouse.c: 155: uint8_t y;
-[; ;app_device_mouse.c: 156: } MOUSE_REPORT;
-"170
-[v _mouseReport `S617 ~T0 @X0 1 s@1280 ]
-[; ;app_device_mouse.c: 170: static MOUSE_REPORT mouseReport @ 0x500;
-"178
+[; ;app_device_mouse.c: 61: const struct{uint8_t report[50];}hid_rpt01=
+[; ;app_device_mouse.c: 62: {
+[; ;app_device_mouse.c: 63: {
+[; ;app_device_mouse.c: 64: 0x05, 0x01,
+[; ;app_device_mouse.c: 65: 0x09, 0x02,
+[; ;app_device_mouse.c: 66: 0xA1, 0x01,
+[; ;app_device_mouse.c: 67: 0x09, 0x01,
+[; ;app_device_mouse.c: 68: 0xA1, 0x00,
+[; ;app_device_mouse.c: 69: 0x05, 0x09,
+[; ;app_device_mouse.c: 70: 0x19, 0x01,
+[; ;app_device_mouse.c: 71: 0x29, 0x03,
+[; ;app_device_mouse.c: 72: 0x15, 0x00,
+[; ;app_device_mouse.c: 73: 0x25, 0x01,
+[; ;app_device_mouse.c: 74: 0x95, 0x03,
+[; ;app_device_mouse.c: 75: 0x75, 0x01,
+[; ;app_device_mouse.c: 76: 0x81, 0x02,
+[; ;app_device_mouse.c: 77: 0x95, 0x01,
+[; ;app_device_mouse.c: 78: 0x75, 0x05,
+[; ;app_device_mouse.c: 79: 0x81, 0x01,
+[; ;app_device_mouse.c: 80: 0x05, 0x01,
+[; ;app_device_mouse.c: 81: 0x09, 0x30,
+[; ;app_device_mouse.c: 82: 0x09, 0x31,
+[; ;app_device_mouse.c: 83: 0x15, 0x81,
+[; ;app_device_mouse.c: 84: 0x25, 0x7F,
+[; ;app_device_mouse.c: 85: 0x75, 0x08,
+[; ;app_device_mouse.c: 86: 0x95, 0x02,
+[; ;app_device_mouse.c: 87: 0x81, 0x06,
+[; ;app_device_mouse.c: 88: 0xC0, 0xC0
+[; ;app_device_mouse.c: 89: }
+[; ;app_device_mouse.c: 90: };
+[; ;app_device_mouse.c: 102: typedef struct 
+[; ;app_device_mouse.c: 103: {
+[; ;app_device_mouse.c: 127: union 
+[; ;app_device_mouse.c: 128: {
+[; ;app_device_mouse.c: 129: struct 
+[; ;app_device_mouse.c: 130: {
+[; ;app_device_mouse.c: 131: unsigned button1 :1;
+[; ;app_device_mouse.c: 132: unsigned button2 :1;
+[; ;app_device_mouse.c: 133: unsigned button3 :1;
+[; ;app_device_mouse.c: 134: unsigned :5;
+[; ;app_device_mouse.c: 135: };
+[; ;app_device_mouse.c: 136: struct 
+[; ;app_device_mouse.c: 137: {
+[; ;app_device_mouse.c: 138: unsigned primary :1;
+[; ;app_device_mouse.c: 139: unsigned secondary :1;
+[; ;app_device_mouse.c: 140: unsigned tertiary :1;
+[; ;app_device_mouse.c: 141: unsigned :5;
+[; ;app_device_mouse.c: 142: };
+[; ;app_device_mouse.c: 143: uint8_t value;
+[; ;app_device_mouse.c: 144: } buttons;
+[; ;app_device_mouse.c: 165: uint8_t x;
+[; ;app_device_mouse.c: 166: uint8_t y;
+[; ;app_device_mouse.c: 167: } MOUSE_REPORT;
+"181
+[v _mouseReport `S619 ~T0 @X0 1 s@1280 ]
+[; ;app_device_mouse.c: 181: static MOUSE_REPORT mouseReport @ 0x500;
+"189
 [v _xVector `Cuc ~T0 @X0 -> 0 `x s ]
 [i _xVector
 :U ..
@@ -5014,8 +5106,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ..
 ]
-[; ;app_device_mouse.c: 178: static const uint8_t xVector[]={ -1, 0, 1, 0};
-"179
+[; ;app_device_mouse.c: 189: static const uint8_t xVector[]={ -1, 0, 1, 0};
+"190
 [v _yVector `Cuc ~T0 @X0 -> 0 `x s ]
 [i _yVector
 :U ..
@@ -5025,317 +5117,327 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 ..
 ]
-[; ;app_device_mouse.c: 179: static const uint8_t yVector[]={ 0, -1, 0, 1};
-[; ;app_device_mouse.c: 181: typedef struct
-[; ;app_device_mouse.c: 182: {
-[; ;app_device_mouse.c: 183: bool sentStop;
-[; ;app_device_mouse.c: 184: bool lastButtonState;
-[; ;app_device_mouse.c: 185: uint8_t vectorPosition;
-[; ;app_device_mouse.c: 186: uint16_t movementCount;
-[; ;app_device_mouse.c: 187: bool movementMode;
-[; ;app_device_mouse.c: 189: struct
-[; ;app_device_mouse.c: 190: {
-[; ;app_device_mouse.c: 191: void* handle;
-[; ;app_device_mouse.c: 192: uint8_t idleRate;
-[; ;app_device_mouse.c: 193: uint8_t idleRateSofCount;
-[; ;app_device_mouse.c: 194: } inputReport[1];
-[; ;app_device_mouse.c: 196: } MOUSE;
-"198
-[v _mouse `S621 ~T0 @X0 1 s ]
-[; ;app_device_mouse.c: 198: static MOUSE mouse;
-"212
+[; ;app_device_mouse.c: 190: static const uint8_t yVector[]={ 0, -1, 0, 1};
+[; ;app_device_mouse.c: 192: typedef struct
+[; ;app_device_mouse.c: 193: {
+[; ;app_device_mouse.c: 194: bool sentStop;
+[; ;app_device_mouse.c: 195: bool lastButtonState;
+[; ;app_device_mouse.c: 196: uint8_t vectorPosition;
+[; ;app_device_mouse.c: 197: uint16_t movementCount;
+[; ;app_device_mouse.c: 198: bool movementMode;
+[; ;app_device_mouse.c: 200: struct
+[; ;app_device_mouse.c: 201: {
+[; ;app_device_mouse.c: 202: void* handle;
+[; ;app_device_mouse.c: 203: uint8_t idleRate;
+[; ;app_device_mouse.c: 204: uint8_t idleRateSofCount;
+[; ;app_device_mouse.c: 205: } inputReport[1];
+[; ;app_device_mouse.c: 207: } MOUSE;
+"209
+[v _mouse `S623 ~T0 @X0 1 s ]
+[; ;app_device_mouse.c: 209: static MOUSE mouse;
+"223
 [v _APP_DeviceMouseInitialize `(v ~T0 @X0 1 ef ]
-"213
+"224
 {
-[; ;app_device_mouse.c: 212: void APP_DeviceMouseInitialize(void)
-[; ;app_device_mouse.c: 213: {
+[; ;app_device_mouse.c: 223: void APP_DeviceMouseInitialize(void)
+[; ;app_device_mouse.c: 224: {
 [e :U _APP_DeviceMouseInitialize ]
 [f ]
-[; ;app_device_mouse.c: 219: mouse.movementMode = 1;
-"219
-[e = . _mouse 4 -> -> 1 `i `uc ]
-[; ;app_device_mouse.c: 222: mouse.inputReport[0].handle = (0);
-"222
-[e = . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 0 -> -> 0 `i `*v ]
-[; ;app_device_mouse.c: 224: mouse.sentStop = 0;
-"224
-[e = . _mouse 0 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 226: mouse.movementCount = 0;
-"226
-[e = . _mouse 3 -> -> 0 `i `ui ]
-[; ;app_device_mouse.c: 229: USBEnableEndpoint(1,0x02|0x10|0x08);
-"229
-[e ( _USBEnableEndpoint (2 , -> -> 1 `i `uc -> | | -> 2 `i -> 16 `i -> 8 `i `uc ]
-[; ;app_device_mouse.c: 230: }
+[; ;app_device_mouse.c: 230: mouse.movementMode = 1;
 "230
-[e :UE 623 ]
-}
-"246
-[v _APP_DeviceMouseTasks `(v ~T0 @X0 1 ef3`i`i`i ]
-"247
-{
-[; ;app_device_mouse.c: 246: void APP_DeviceMouseTasks(signed int accx, signed int accy, signed int accz)
-[; ;app_device_mouse.c: 247: {
-[e :U _APP_DeviceMouseTasks ]
-"246
-[v _accx `i ~T0 @X0 1 r1 ]
-[v _accy `i ~T0 @X0 1 r2 ]
-[v _accz `i ~T0 @X0 1 r3 ]
-"247
-[f ]
-"248
-[v _currentButtonState `uc ~T0 @X0 1 a ]
-[; ;app_device_mouse.c: 248: bool currentButtonState;
-[; ;app_device_mouse.c: 250: acx = accx;
-"250
-[e = _acx -> _accx `ui ]
-[; ;app_device_mouse.c: 251: acy = accy;
-"251
-[e = _acy -> _accy `ui ]
-[; ;app_device_mouse.c: 252: acz = accz;
-"252
-[e = _acz -> _accz `ui ]
-[; ;app_device_mouse.c: 254: currentButtonState = BUTTON_IsPressed(BUTTON_S2);
-"254
-[e = _currentButtonState ( _BUTTON_IsPressed (1 . `E4441 1 ]
-[; ;app_device_mouse.c: 259: if(mouse.lastButtonState != currentButtonState)
-"259
-[e $ ! != -> . _mouse 1 `i -> _currentButtonState `i 625  ]
-[; ;app_device_mouse.c: 260: {
-"260
-{
-[; ;app_device_mouse.c: 261: mouse.lastButtonState = currentButtonState;
-"261
-[e = . _mouse 1 _currentButtonState ]
-[; ;app_device_mouse.c: 263: if(currentButtonState == 0)
-"263
-[e $ ! == -> _currentButtonState `i -> 0 `i 626  ]
-[; ;app_device_mouse.c: 264: {
-"264
-{
-[; ;app_device_mouse.c: 265: mouse.movementMode = !mouse.movementMode;
-"265
-[e = . _mouse 4 -> -> ! != -> . _mouse 4 `i -> -> -> 0 `i `uc `i `i `uc ]
-[; ;app_device_mouse.c: 267: mouse.inputReport[0].idleRateSofCount = 0;
-"267
-[e = . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 2 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 268: mouse.sentStop = 0;
-"268
+[e = . _mouse 4 -> -> 1 `i `uc ]
+[; ;app_device_mouse.c: 233: mouse.inputReport[0].handle = (0);
+"233
+[e = . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 0 -> -> 0 `i `*v ]
+[; ;app_device_mouse.c: 235: mouse.sentStop = 0;
+"235
 [e = . _mouse 0 -> -> 0 `i `uc ]
-"269
+[; ;app_device_mouse.c: 237: mouse.movementCount = 0;
+"237
+[e = . _mouse 3 -> -> 0 `i `ui ]
+[; ;app_device_mouse.c: 240: USBEnableEndpoint(1,0x02|0x10|0x08);
+"240
+[e ( _USBEnableEndpoint (2 , -> -> 1 `i `uc -> | | -> 2 `i -> 16 `i -> 8 `i `uc ]
+[; ;app_device_mouse.c: 241: }
+"241
+[e :UE 625 ]
 }
-[e :U 626 ]
-"270
-}
-[e :U 625 ]
-[; ;app_device_mouse.c: 269: }
-[; ;app_device_mouse.c: 270: }
-[; ;app_device_mouse.c: 271: }
-"271
-[e :UE 624 ]
-}
-"273
-[v _APP_DeviceMouseIdleRateCallback `(v ~T0 @X0 1 ef2`uc`uc ]
-"274
+"257
+[v _APP_DeviceMouseTasks `(v ~T0 @X0 1 ef ]
+"258
 {
-[; ;app_device_mouse.c: 273: void APP_DeviceMouseIdleRateCallback(uint8_t reportId, uint8_t idleRate)
-[; ;app_device_mouse.c: 274: {
-[e :U _APP_DeviceMouseIdleRateCallback ]
-"273
-[v _reportId `uc ~T0 @X0 1 r1 ]
-[v _idleRate `uc ~T0 @X0 1 r2 ]
-"274
+[; ;app_device_mouse.c: 257: void APP_DeviceMouseTasks()
+[; ;app_device_mouse.c: 258: {
+[e :U _APP_DeviceMouseTasks ]
 [f ]
-[; ;app_device_mouse.c: 278: if(reportId == 0)
-"278
-[e $ ! == -> _reportId `i -> 0 `i 628  ]
-[; ;app_device_mouse.c: 279: {
-"279
+"259
+[v _currentButtonState `uc ~T0 @X0 1 a ]
+[; ;app_device_mouse.c: 259: bool currentButtonState;
+[; ;app_device_mouse.c: 263: currentButtonState = BUTTON_IsPressed(BUTTON_S2);
+"263
+[e = _currentButtonState ( _BUTTON_IsPressed (1 . `E4441 1 ]
+[; ;app_device_mouse.c: 268: if(mouse.lastButtonState != currentButtonState)
+"268
+[e $ ! != -> . _mouse 1 `i -> _currentButtonState `i 627  ]
+[; ;app_device_mouse.c: 269: {
+"269
 {
-[; ;app_device_mouse.c: 280: mouse.inputReport[reportId].idleRate = idleRate;
-"280
-[e = . *U + &U . _mouse 5 * -> _reportId `ux -> -> # *U &U . _mouse 5 `ui `ux 1 _idleRate ]
-"281
+[; ;app_device_mouse.c: 270: mouse.lastButtonState = currentButtonState;
+"270
+[e = . _mouse 1 _currentButtonState ]
+[; ;app_device_mouse.c: 272: if(currentButtonState == 0)
+"272
+[e $ ! == -> _currentButtonState `i -> 0 `i 628  ]
+[; ;app_device_mouse.c: 273: {
+"273
+{
+[; ;app_device_mouse.c: 274: mouse.movementMode = !mouse.movementMode;
+"274
+[e = . _mouse 4 -> -> ! != -> . _mouse 4 `i -> -> -> 0 `i `uc `i `i `uc ]
+[; ;app_device_mouse.c: 276: mouse.inputReport[0].idleRateSofCount = 0;
+"276
+[e = . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 2 -> -> 0 `i `uc ]
+[; ;app_device_mouse.c: 277: mouse.sentStop = 0;
+"277
+[e = . _mouse 0 -> -> 0 `i `uc ]
+"278
 }
 [e :U 628 ]
-[; ;app_device_mouse.c: 281: }
-[; ;app_device_mouse.c: 282: }
-"282
-[e :UE 627 ]
+"279
 }
-"296
-[v _APP_DeviceMouseSOFHandler `(v ~T0 @X0 1 ef ]
-"297
+[e :U 627 ]
+[; ;app_device_mouse.c: 278: }
+[; ;app_device_mouse.c: 279: }
+[; ;app_device_mouse.c: 280: }
+"280
+[e :UE 626 ]
+}
+"282
+[v _APP_DeviceMouseIdleRateCallback `(v ~T0 @X0 1 ef2`uc`uc ]
+"283
 {
-[; ;app_device_mouse.c: 296: void APP_DeviceMouseSOFHandler(void)
-[; ;app_device_mouse.c: 297: {
-[e :U _APP_DeviceMouseSOFHandler ]
+[; ;app_device_mouse.c: 282: void APP_DeviceMouseIdleRateCallback(uint8_t reportId, uint8_t idleRate)
+[; ;app_device_mouse.c: 283: {
+[e :U _APP_DeviceMouseIdleRateCallback ]
+"282
+[v _reportId `uc ~T0 @X0 1 r1 ]
+[v _idleRate `uc ~T0 @X0 1 r2 ]
+"283
 [f ]
-[; ;app_device_mouse.c: 303: if(USBDeviceState != CONFIGURED_STATE)
-"303
-[e $ ! != -> _USBDeviceState `i -> . `E4889 6 `i 630  ]
-[; ;app_device_mouse.c: 304: {
-"304
+[; ;app_device_mouse.c: 287: if(reportId == 0)
+"287
+[e $ ! == -> _reportId `i -> 0 `i 630  ]
+[; ;app_device_mouse.c: 288: {
+"288
 {
-[; ;app_device_mouse.c: 305: return;
-"305
-[e $UE 629  ]
-"306
+[; ;app_device_mouse.c: 289: mouse.inputReport[reportId].idleRate = idleRate;
+"289
+[e = . *U + &U . _mouse 5 * -> _reportId `ux -> -> # *U &U . _mouse 5 `ui `ux 1 _idleRate ]
+"290
 }
 [e :U 630 ]
-[; ;app_device_mouse.c: 306: }
-[; ;app_device_mouse.c: 331: if(((mouse.inputReport[0].handle != 0x0000) && ((*(volatile uint8_t*)mouse.inputReport[0].handle & 0x80) != 0x00)) == 0)
-"331
-[e $ ! == -> && != . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 0 -> -> 0 `i `*v != & -> *U -> . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 0 `*Vuc `i -> 128 `i -> 0 `i `i -> 0 `i 631  ]
-[; ;app_device_mouse.c: 332: {
-"332
-{
-[; ;app_device_mouse.c: 338: mouse.movementCount++;
-"338
-[e ++ . _mouse 3 -> -> 1 `i `ui ]
-[; ;app_device_mouse.c: 343: if(mouse.movementCount == 1)
-"343
-[e $ ! == . _mouse 3 -> -> 1 `i `ui 632  ]
-[; ;app_device_mouse.c: 344: {
-"344
-{
-[; ;app_device_mouse.c: 345: mouse.movementCount = 0;
-"345
-[e = . _mouse 3 -> -> 0 `i `ui ]
-[; ;app_device_mouse.c: 347: mouse.vectorPosition++;
-"347
-[e ++ . _mouse 2 -> -> 1 `i `uc ]
-[; ;app_device_mouse.c: 348: if(mouse.vectorPosition >= 1)
-"348
-[e $ ! >= -> . _mouse 2 `i -> 1 `i 633  ]
-[; ;app_device_mouse.c: 349: {
-"349
-{
-[; ;app_device_mouse.c: 350: mouse.vectorPosition = 0;
-"350
-[e = . _mouse 2 -> -> 0 `i `uc ]
-"351
+[; ;app_device_mouse.c: 290: }
+[; ;app_device_mouse.c: 291: }
+"291
+[e :UE 629 ]
 }
-[e :U 633 ]
-"352
+"305
+[v _APP_DeviceMouseSOFHandler `(v ~T0 @X0 1 ef ]
+"306
+{
+[; ;app_device_mouse.c: 305: void APP_DeviceMouseSOFHandler(void)
+[; ;app_device_mouse.c: 306: {
+[e :U _APP_DeviceMouseSOFHandler ]
+[f ]
+[; ;app_device_mouse.c: 312: if(USBDeviceState != CONFIGURED_STATE)
+"312
+[e $ ! != -> _USBDeviceState `i -> . `E4889 6 `i 632  ]
+[; ;app_device_mouse.c: 313: {
+"313
+{
+[; ;app_device_mouse.c: 314: return;
+"314
+[e $UE 631  ]
+"315
 }
 [e :U 632 ]
-[; ;app_device_mouse.c: 351: }
-[; ;app_device_mouse.c: 352: }
-[; ;app_device_mouse.c: 359: if(mouse.movementMode == 1)
+[; ;app_device_mouse.c: 315: }
+[; ;app_device_mouse.c: 340: if(((mouse.inputReport[0].handle != 0x0000) && ((*(volatile uint8_t*)mouse.inputReport[0].handle & 0x80) != 0x00)) == 0)
+"340
+[e $ ! == -> && != . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 0 -> -> 0 `i `*v != & -> *U -> . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 0 `*Vuc `i -> 128 `i -> 0 `i `i -> 0 `i 633  ]
+[; ;app_device_mouse.c: 341: {
+"341
+{
+[; ;app_device_mouse.c: 347: mouse.movementCount++;
+"347
+[e ++ . _mouse 3 -> -> 1 `i `ui ]
+[; ;app_device_mouse.c: 352: if(mouse.movementCount == 1)
+"352
+[e $ ! == . _mouse 3 -> -> 1 `i `ui 634  ]
+[; ;app_device_mouse.c: 353: {
+"353
+{
+[; ;app_device_mouse.c: 354: mouse.movementCount = 0;
+"354
+[e = . _mouse 3 -> -> 0 `i `ui ]
+[; ;app_device_mouse.c: 356: mouse.vectorPosition++;
+"356
+[e ++ . _mouse 2 -> -> 1 `i `uc ]
+[; ;app_device_mouse.c: 357: if(mouse.vectorPosition >= 1)
+"357
+[e $ ! >= -> . _mouse 2 `i -> 1 `i 635  ]
+[; ;app_device_mouse.c: 358: {
+"358
+{
+[; ;app_device_mouse.c: 359: mouse.vectorPosition = 0;
 "359
-[e $ ! == -> . _mouse 4 `i -> 1 `i 634  ]
-[; ;app_device_mouse.c: 360: {
+[e = . _mouse 2 -> -> 0 `i `uc ]
 "360
-{
-[; ;app_device_mouse.c: 361: mouseReport.buttons.button1 = 0;
-"361
-[e = . . . _mouseReport 0 0 0 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 362: mouseReport.buttons.button2 = 0;
-"362
-[e = . . . _mouseReport 0 0 1 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 363: mouseReport.buttons.button3 = 0;
-"363
-[e = . . . _mouseReport 0 0 2 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 365: if(PORTBbits.RB2 == 1)
-"365
-[e $ ! == -> . . _PORTBbits 0 2 `i -> 1 `i 635  ]
-[; ;app_device_mouse.c: 366: {
-"366
-{
-[; ;app_device_mouse.c: 368: mouseReport.x = 0;
-"368
-[e = . _mouseReport 1 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 369: mouseReport.y = -1;
-"369
-[e = . _mouseReport 2 -> -U -> 1 `i `uc ]
-"370
 }
-[; ;app_device_mouse.c: 370: }
-[e $U 636  ]
-"371
 [e :U 635 ]
-[; ;app_device_mouse.c: 371: else
-[; ;app_device_mouse.c: 372: {
-"372
+"361
+}
+[e :U 634 ]
+[; ;app_device_mouse.c: 360: }
+[; ;app_device_mouse.c: 361: }
+[; ;app_device_mouse.c: 368: if(mouse.movementMode == 1)
+"368
+[e $ ! == -> . _mouse 4 `i -> 1 `i 636  ]
+[; ;app_device_mouse.c: 369: {
+"369
 {
+[; ;app_device_mouse.c: 370: mouseReport.buttons.button1 = 0;
+"370
+[e = . . . _mouseReport 0 0 0 -> -> 0 `i `uc ]
+[; ;app_device_mouse.c: 371: mouseReport.buttons.button2 = 0;
+"371
+[e = . . . _mouseReport 0 0 1 -> -> 0 `i `uc ]
+[; ;app_device_mouse.c: 372: mouseReport.buttons.button3 = 0;
+"372
+[e = . . . _mouseReport 0 0 2 -> -> 0 `i `uc ]
 [; ;app_device_mouse.c: 373: mouseReport.x = 0;
 "373
 [e = . _mouseReport 1 -> -> 0 `i `uc ]
 [; ;app_device_mouse.c: 374: mouseReport.y = 0;
 "374
 [e = . _mouseReport 2 -> -> 0 `i `uc ]
-"375
-}
-[e :U 636 ]
+[; ;app_device_mouse.c: 376: oldacx = acx;
 "376
-}
-[; ;app_device_mouse.c: 375: }
-[; ;app_device_mouse.c: 376: }
-[e $U 637  ]
-"377
-[e :U 634 ]
-[; ;app_device_mouse.c: 377: else
-[; ;app_device_mouse.c: 378: {
+[e = _oldacx _acx ]
+[; ;app_device_mouse.c: 378: acx = MPU6050_ReadAccX();
 "378
-{
-[; ;app_device_mouse.c: 379: mouseReport.buttons.value = 0;
-"379
-[e = . . _mouseReport 0 2 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 380: mouseReport.x = 0;
+[e = _acx ( _MPU6050_ReadAccX ..  ]
+[; ;app_device_mouse.c: 380: if(acx >= 6000)
 "380
-[e = . _mouseReport 1 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 381: mouseReport.y = 0;
+[e $ ! >= _acx -> 6000 `i 637  ]
+[; ;app_device_mouse.c: 381: {
 "381
-[e = . _mouseReport 2 -> -> 0 `i `uc ]
-[; ;app_device_mouse.c: 383: if(mouse.inputReport[0].idleRate != 0)
-"383
-[e $ ! != -> . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 1 `i -> 0 `i 638  ]
-[; ;app_device_mouse.c: 384: {
+{
+[; ;app_device_mouse.c: 384: mouseReport.y = -1;
 "384
-{
-[; ;app_device_mouse.c: 385: mouse.inputReport[0].idleRateSofCount++;
+[e = . _mouseReport 2 -> -U -> 1 `i `uc ]
 "385
-[e ++ . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 2 -> -> 1 `i `uc ]
-"386
-}
-[e :U 638 ]
-[; ;app_device_mouse.c: 386: }
-[; ;app_device_mouse.c: 393: if(mouse.sentStop == 1)
-"393
-[e $ ! == -> . _mouse 0 `i -> 1 `i 639  ]
-[; ;app_device_mouse.c: 394: {
-"394
-{
-[; ;app_device_mouse.c: 400: if(mouse.inputReport[0].idleRateSofCount <= mouse.inputReport[0].idleRate)
-"400
-[e $ ! <= -> . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 2 `i -> . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 1 `i 640  ]
-[; ;app_device_mouse.c: 401: {
-"401
-{
-[; ;app_device_mouse.c: 402: return;
-"402
-[e $UE 629  ]
-"403
-}
-[e :U 640 ]
-"404
-}
-[e :U 639 ]
-"405
 }
 [e :U 637 ]
-[; ;app_device_mouse.c: 403: }
-[; ;app_device_mouse.c: 404: }
-[; ;app_device_mouse.c: 405: }
-[; ;app_device_mouse.c: 407: mouse.inputReport[0].handle = USBTransferOnePacket(1,1,(uint8_t*)&mouseReport,sizeof(mouseReport));
-"407
-[e = . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 0 ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc -> &U _mouseReport `*uc -> -> # _mouseReport `ui `uc ]
-"412
+[; ;app_device_mouse.c: 385: }
+[; ;app_device_mouse.c: 387: if(acx <=-6000){
+"387
+[e $ ! <= _acx -U -> 6000 `i 638  ]
+{
+[; ;app_device_mouse.c: 388: mouseReport.y = 1;
+"388
+[e = . _mouseReport 2 -> -> 1 `i `uc ]
+"389
 }
-[e :U 631 ]
-[; ;app_device_mouse.c: 412: }
-[; ;app_device_mouse.c: 414: }
+[e :U 638 ]
+[; ;app_device_mouse.c: 389: }
+[; ;app_device_mouse.c: 391: oldacy = acy;
+"391
+[e = _oldacy _acy ]
+[; ;app_device_mouse.c: 392: acy = MPU6050_ReadAccY();
+"392
+[e = _acy ( _MPU6050_ReadAccY ..  ]
+[; ;app_device_mouse.c: 393: if(acy <=-6000){
+"393
+[e $ ! <= _acy -U -> 6000 `i 639  ]
+{
+[; ;app_device_mouse.c: 394: mouseReport.x = -1;
+"394
+[e = . _mouseReport 1 -> -U -> 1 `i `uc ]
+"395
+}
+[e :U 639 ]
+[; ;app_device_mouse.c: 395: }
+[; ;app_device_mouse.c: 397: if(acy >=6000){
+"397
+[e $ ! >= _acy -> 6000 `i 640  ]
+{
+[; ;app_device_mouse.c: 398: mouseReport.x = 1;
+"398
+[e = . _mouseReport 1 -> -> 1 `i `uc ]
+"399
+}
+[e :U 640 ]
+[; ;app_device_mouse.c: 399: }
+[; ;app_device_mouse.c: 401: if(PORTBbits.RB2 == 1){
+"401
+[e $ ! == -> . . _PORTBbits 0 2 `i -> 1 `i 641  ]
+{
+[; ;app_device_mouse.c: 402: mouseReport.buttons.button1 = 1;
+"402
+[e = . . . _mouseReport 0 0 0 -> -> 1 `i `uc ]
+"403
+}
+[e :U 641 ]
+[; ;app_device_mouse.c: 403: }
+[; ;app_device_mouse.c: 413: if(mouse.inputReport[0].idleRate != 0)
+"413
+[e $ ! != -> . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 1 `i -> 0 `i 642  ]
+[; ;app_device_mouse.c: 414: {
 "414
-[e :UE 629 ]
+{
+[; ;app_device_mouse.c: 415: mouse.inputReport[0].idleRateSofCount++;
+"415
+[e ++ . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 2 -> -> 1 `i `uc ]
+"416
+}
+[e :U 642 ]
+[; ;app_device_mouse.c: 416: }
+[; ;app_device_mouse.c: 423: if(mouse.sentStop == 1)
+"423
+[e $ ! == -> . _mouse 0 `i -> 1 `i 643  ]
+[; ;app_device_mouse.c: 424: {
+"424
+{
+[; ;app_device_mouse.c: 430: if(mouse.inputReport[0].idleRateSofCount <= mouse.inputReport[0].idleRate)
+"430
+[e $ ! <= -> . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 2 `i -> . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 1 `i 644  ]
+[; ;app_device_mouse.c: 431: {
+"431
+{
+[; ;app_device_mouse.c: 432: return;
+"432
+[e $UE 631  ]
+"433
+}
+[e :U 644 ]
+"434
+}
+[e :U 643 ]
+"435
+}
+[e :U 636 ]
+[; ;app_device_mouse.c: 433: }
+[; ;app_device_mouse.c: 434: }
+[; ;app_device_mouse.c: 435: }
+[; ;app_device_mouse.c: 437: mouse.inputReport[0].handle = USBTransferOnePacket(1,1,(uint8_t*)&mouseReport,sizeof(mouseReport));
+"437
+[e = . *U + &U . _mouse 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _mouse 5 `ui `ux 0 ( _USBTransferOnePacket (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc -> &U _mouseReport `*uc -> -> # _mouseReport `ui `uc ]
+"442
+}
+[e :U 633 ]
+[; ;app_device_mouse.c: 442: }
+[; ;app_device_mouse.c: 444: }
+"444
+[e :UE 631 ]
 }

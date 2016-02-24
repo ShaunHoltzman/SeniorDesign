@@ -1,3 +1,5 @@
+//change
+
 /********************************************************************
  Software License Agreement:
 
@@ -147,26 +149,26 @@ MAIN_RETURN main(void)
         //Application specific tasks
             
         
-        LCDcmd(0x01);
-        accx = MPU6050_ReadAccX(); //
-        _delay(1);
-        gforcex = (double)accx * gforcescale;
-        LCDstring(&ax);
-        LCDdouble((double)accx);
-        LCDdata(' ');
-        accy = MPU6050_ReadAccY();
-         _delay(1);
-        gforcey = (double)accy * gforcescale;
-        LCDstring(&ay);
-        LCDdouble((double)accy);
-        LCDcmd(0xC0);
-        accz = MPU6050_ReadAccZ();
-         _delay(1);
-        gforcez = (double)accz * gforcescale;
-        LCDstring(&az);
-        LCDdouble((double)accz);    
+//        LCDcmd(0x01);
+//        accx = MPU6050_ReadAccX(); //
+//        _delay(1);
+//        gforcex = (double)accx * gforcescale;
+//        LCDstring(&ax);
+//        LCDdouble((double)accx);
+//        LCDdata(' ');
+//        accy = MPU6050_ReadAccY();
+//         _delay(1);
+//        gforcey = (double)accy * gforcescale;
+//        LCDstring(&ay);
+//        LCDdouble((double)accy);
+//        LCDcmd(0xC0);
+//        accz = MPU6050_ReadAccZ();
+//         _delay(1);
+//        gforcez = (double)accz * gforcescale;
+//        LCDstring(&az);
+//        LCDdouble((double)accz);    
          
-        APP_DeviceMouseTasks(accx, accy, accz);
+        APP_DeviceMouseTasks();
 
     }//end while
 }//end main

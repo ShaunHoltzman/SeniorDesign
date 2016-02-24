@@ -72,7 +72,7 @@ void APP_DeviceMouseStart();
 * Output: None
 *
 ********************************************************************/
-void APP_DeviceMouseTasks(signed int accx, signed int accy, signed int accz);
+void APP_DeviceMouseTasks();
 
 bool APP_DeviceMouseEventHandler(unsigned int event, void *pdata, size_t size);
 void APP_DeviceMouseSOFHandler(void);
